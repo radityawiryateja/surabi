@@ -74,22 +74,16 @@
               Tambahan Topping
             </h4>
             <div class="space-y-3 mb-6 md:mb-8">
-              <label
+              <div
                 v-for="topping in toppings"
                 :key="topping.name"
-                class="flex items-center justify-between p-3 md:p-4 border border-gray-200 dark:border-gray-700 rounded-xl md:rounded-2xl cursor-pointer hover:border-brand-primary dark:hover:border-brand-primaryDark transition-colors"
+                class="flex items-center justify-between p-3 md:p-4 border border-gray-200 dark:border-gray-700 rounded-xl md:rounded-2xl"
               >
-                <div class="flex items-center gap-3">
-                  <input
-                    type="checkbox"
-                    class="w-4 h-4 md:w-5 md:h-5 accent-brand-primary rounded"
-                  />
-                  <span class="text-xs md:text-sm font-medium dark:text-gray-200">
-                    {{ topping.name }}
-                  </span>
-                </div>
+                <span class="text-xs md:text-sm font-medium dark:text-gray-200">
+                  {{ topping.name }}
+                </span>
                 <span class="text-xs md:text-sm text-gray-500">{{ topping.price }}</span>
-              </label>
+              </div>
             </div>
 
             <!-- CTA -->
