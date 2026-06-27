@@ -80,53 +80,53 @@
     <div id="product-modal" class="fixed inset-0 z-[100] hidden items-center justify-center">
         <div class="absolute inset-0 bg-black/60 backdrop-blur-sm modal-backdrop opacity-0 transition-opacity duration-300" onclick="closeModal()"></div>
         
-        <div class="modal-content relative bg-brand-light dark:bg-brand-surfaceDark w-full max-w-md md:max-w-lg lg:max-w-xl mx-4 rounded-4xl shadow-2xl overflow-hidden transform translate-y-20 opacity-0 scale-95 transition-all duration-500 max-h-[90vh] flex flex-col">
-            <div class="relative h-64 md:h-72 w-full flex-shrink-0">
+        <div class="modal-content relative bg-brand-light dark:bg-brand-surfaceDark w-full max-w-md md:max-w-lg lg:max-w-xl mx-4 rounded-3xl md:rounded-4xl shadow-2xl overflow-hidden transform translate-y-20 opacity-0 scale-95 transition-all duration-500 max-h-[90vh] flex flex-col">
+            <div class="relative h-56 md:h-72 w-full flex-shrink-0">
                 <button onclick="closeModal()" class="absolute top-4 left-4 z-10 w-10 h-10 bg-white/80 dark:bg-black/50 backdrop-blur-md rounded-full flex items-center justify-center text-brand-primary dark:text-white hover:scale-110 transition-transform">
                     <i class="ph ph-arrow-left text-xl"></i>
                 </button>
                 <img id="modal-img" src="" alt="Produk" class="w-full h-full object-cover">
             </div>
             
-            <div class="p-6 md:p-8 overflow-y-auto hide-scroll flex-grow">
+            <div class="p-5 md:p-8 overflow-y-auto hide-scroll flex-grow">
                 <div class="flex justify-between items-start mb-2">
                     <h3 id="modal-title" class="font-serif text-2xl md:text-3xl font-bold text-brand-primary dark:text-white">Nama Produk</h3>
-                    <span id="modal-badge" class="bg-brand-surface dark:bg-yellow-900/40 text-brand-accent text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1 hidden">
+                    <span id="modal-badge" class="bg-brand-surface dark:bg-yellow-900/40 text-brand-accent text-[10px] md:text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1 hidden">
                         Badge
                     </span>
                 </div>
                 
-                <div class="flex items-center gap-2 mb-4 text-sm">
-                    <i class="ph-fill ph-star text-brand-accent text-lg"></i>
+                <div class="flex items-center gap-2 mb-3 md:mb-4 text-xs md:text-sm">
+                    <i class="ph-fill ph-star text-brand-accent text-base md:text-lg"></i>
                     <span id="modal-rating" class="font-bold dark:text-gray-200">0.0</span>
                 </div>
 
-                <p id="modal-price" class="font-serif font-bold text-2xl text-brand-primary dark:text-brand-primaryDark mb-4">Rp 0</p>
+                <p id="modal-price" class="font-serif font-bold text-xl md:text-2xl text-brand-primary dark:text-brand-primaryDark mb-4">Rp 0</p>
                 
-                <p id="modal-desc" class="text-sm md:text-base text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+                <p id="modal-desc" class="text-sm md:text-base text-gray-600 dark:text-gray-300 leading-relaxed mb-6 md:mb-8">
                     Deskripsi produk akan muncul di sini.
                 </p>
 
-                <h4 class="font-bold text-brand-primary dark:text-white mb-4">Tambahan Topping</h4>
-                <div class="space-y-3 mb-8">
-                    <label class="flex items-center justify-between p-4 border border-gray-200 dark:border-gray-700 rounded-2xl cursor-pointer hover:border-brand-primary dark:hover:border-brand-primaryDark transition-colors">
+                <h4 class="font-bold text-brand-primary dark:text-white mb-4 text-sm md:text-base">Tambahan Topping</h4>
+                <div class="space-y-3 mb-6 md:mb-8">
+                    <label class="flex items-center justify-between p-3 md:p-4 border border-gray-200 dark:border-gray-700 rounded-xl md:rounded-2xl cursor-pointer hover:border-brand-primary dark:hover:border-brand-primaryDark transition-colors">
                         <div class="flex items-center gap-3">
-                            <input type="checkbox" class="w-5 h-5 accent-brand-primary rounded">
-                            <span class="text-sm font-medium dark:text-gray-200">Keju Parut</span>
+                            <input type="checkbox" class="w-4 h-4 md:w-5 md:h-5 accent-brand-primary rounded">
+                            <span class="text-xs md:text-sm font-medium dark:text-gray-200">Keju Parut</span>
                         </div>
-                        <span class="text-sm text-gray-500">+Rp 3.000</span>
+                        <span class="text-xs md:text-sm text-gray-500">+Rp 3.000</span>
                     </label>
-                    <label class="flex items-center justify-between p-4 border border-gray-200 dark:border-gray-700 rounded-2xl cursor-pointer hover:border-brand-primary dark:hover:border-brand-primaryDark transition-colors">
+                    <label class="flex items-center justify-between p-3 md:p-4 border border-gray-200 dark:border-gray-700 rounded-xl md:rounded-2xl cursor-pointer hover:border-brand-primary dark:hover:border-brand-primaryDark transition-colors">
                         <div class="flex items-center gap-3">
-                            <input type="checkbox" class="w-5 h-5 accent-brand-primary rounded">
-                            <span class="text-sm font-medium dark:text-gray-200">Susu Kental Manis</span>
+                            <input type="checkbox" class="w-4 h-4 md:w-5 md:h-5 accent-brand-primary rounded">
+                            <span class="text-xs md:text-sm font-medium dark:text-gray-200">Susu Kental Manis</span>
                         </div>
-                        <span class="text-sm text-gray-500">+Rp 1.000</span>
+                        <span class="text-xs md:text-sm text-gray-500">+Rp 1.000</span>
                     </label>
                 </div>
 
-                <button class="w-full bg-brand-primary dark:bg-brand-primaryDark text-white dark:text-brand-dark py-4 rounded-full font-bold hover:opacity-90 transition-opacity flex items-center justify-center gap-2 shadow-xl shadow-brand-primary/20">
-                    <i class="ph ph-whatsapp-logo text-xl"></i> PESAN VIA WHATSAPP
+                <button class="w-full bg-brand-primary dark:bg-brand-primaryDark text-white dark:text-brand-dark py-3 md:py-4 rounded-full font-bold hover:opacity-90 transition-opacity flex items-center justify-center gap-2 shadow-xl shadow-brand-primary/20 text-sm md:text-base">
+                    <i class="ph ph-whatsapp-logo text-lg md:text-xl"></i> PESAN VIA WHATSAPP
                 </button>
             </div>
         </div>
@@ -136,36 +136,42 @@
     <div id="contact-choice-modal" class="fixed inset-0 z-[110] hidden items-center justify-center">
         <div class="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 transition-opacity duration-300" id="contact-backdrop" onclick="closeContactModal()"></div>
         
-        <div class="relative bg-brand-light dark:bg-brand-surfaceDark w-full max-w-sm mx-4 rounded-4xl shadow-2xl p-8 transform translate-y-10 opacity-0 scale-95 transition-all duration-300" id="contact-modal-content">
+        <div class="relative bg-brand-light dark:bg-brand-surfaceDark w-full max-w-sm mx-4 rounded-3xl md:rounded-4xl shadow-2xl p-6 md:p-8 transform translate-y-10 opacity-0 scale-95 transition-all duration-300" id="contact-modal-content">
             <div class="text-center mb-6">
-                <h3 class="font-serif text-2xl font-bold text-brand-primary dark:text-white mb-2">Pilih Jalur Pesan</h3>
-                <p class="text-sm text-gray-500 dark:text-gray-400">Pesan Anda sudah siap dikirim.</p>
+                <h3 class="font-serif text-xl md:text-2xl font-bold text-brand-primary dark:text-white mb-2">Pilih Jalur Pesan</h3>
+                <p class="text-xs md:text-sm text-gray-500 dark:text-gray-400">Pesan Anda sudah siap dikirim.</p>
             </div>
             
-            <div class="space-y-4">
-                <button onclick="sendViaWA()" class="w-full bg-[#25D366] text-white py-4 rounded-2xl font-bold hover:shadow-lg hover:-translate-y-1 transition-all flex items-center justify-center gap-3 text-lg">
-                    <i class="ph-fill ph-whatsapp-logo text-2xl"></i> WhatsApp
+            <div class="space-y-3 md:space-y-4">
+                <button onclick="sendViaWA()" class="w-full bg-[#25D366] text-white py-3 md:py-4 rounded-xl md:rounded-2xl font-bold hover:shadow-lg hover:-translate-y-1 transition-all flex items-center justify-center gap-3 text-sm md:text-lg">
+                    <i class="ph-fill ph-whatsapp-logo text-xl md:text-2xl"></i> WhatsApp
                 </button>
-                <button onclick="sendViaEmail()" class="w-full bg-brand-primary dark:bg-brand-primaryDark text-white dark:text-brand-dark py-4 rounded-2xl font-bold hover:shadow-lg hover:-translate-y-1 transition-all flex items-center justify-center gap-3 text-lg">
-                    <i class="ph-fill ph-envelope-simple text-2xl"></i> Email
+                <button onclick="sendViaEmail()" class="w-full bg-brand-primary dark:bg-brand-primaryDark text-white dark:text-brand-dark py-3 md:py-4 rounded-xl md:rounded-2xl font-bold hover:shadow-lg hover:-translate-y-1 transition-all flex items-center justify-center gap-3 text-sm md:text-lg">
+                    <i class="ph-fill ph-envelope-simple text-xl md:text-2xl"></i> Email
                 </button>
             </div>
-            <button onclick="closeContactModal()" class="w-full mt-4 py-3 text-gray-500 font-semibold hover:text-red-500 transition-colors">Batal</button>
+            <button onclick="closeContactModal()" class="w-full mt-4 py-2 md:py-3 text-sm md:text-base text-gray-500 font-semibold hover:text-red-500 transition-colors">Batal</button>
         </div>
     </div>
 
-    <!-- NAVBAR -->
-    <header class="fixed w-full top-0 z-40 bg-brand-light/80 dark:bg-brand-dark/80 backdrop-blur-lg border-b border-gray-200/50 dark:border-gray-800/50 transition-colors duration-500">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <button id="mobile-menu-btn" class="md:hidden text-brand-primary dark:text-brand-primaryDark text-3xl p-2 -ml-2 focus:outline-none">
+    <!-- NAVBAR (HEADER) - FIXED CENTERING MOBILE -->
+    <header class="fixed w-full top-0 z-40 bg-brand-light/90 dark:bg-brand-dark/90 backdrop-blur-lg border-b border-gray-200/50 dark:border-gray-800/50 transition-colors duration-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 md:h-20 flex items-center justify-between relative">
+            
+            <!-- Mobile Menu Btn -->
+            <button id="mobile-menu-btn" class="md:hidden text-brand-primary dark:text-brand-primaryDark text-2xl p-2 -ml-2 focus:outline-none z-10 relative">
                 <i class="ph ph-list"></i>
             </button>
-            <a href="#" class="font-serif font-bold text-2xl text-brand-primary dark:text-brand-primaryDark flex items-center gap-2 mx-auto md:mx-0">
-                <div class="w-10 h-10 bg-brand-primary dark:bg-brand-primaryDark text-white dark:text-brand-dark rounded-full flex items-center justify-center">
-                    <i class="ph-fill ph-cooking-pot text-xl"></i>
+            
+            <!-- Logo - Absolute center on mobile so it doesn't jump -->
+            <a href="#" class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 md:static md:transform-none md:mx-0 font-serif font-bold text-xl md:text-2xl text-brand-primary dark:text-brand-primaryDark flex items-center gap-2 z-0 whitespace-nowrap">
+                <div class="w-8 h-8 md:w-10 md:h-10 bg-brand-primary dark:bg-brand-primaryDark text-white dark:text-brand-dark rounded-full flex items-center justify-center">
+                    <i class="ph-fill ph-cooking-pot text-base md:text-xl"></i>
                 </div>
                 Surabi Lembur
             </a>
+            
+            <!-- Desktop Nav -->
             <nav class="hidden md:flex items-center gap-8 font-medium">
                 <a href="#beranda" class="hover:text-brand-primary dark:hover:text-white transition">Beranda</a>
                 <a href="#menu" class="hover:text-brand-primary dark:hover:text-white transition">Menu</a>
@@ -173,8 +179,10 @@
                 <a href="#testimonial" class="hover:text-brand-primary dark:hover:text-white transition">Testimonial</a>
                 <a href="#kontak" class="hover:text-brand-primary dark:hover:text-white transition">Hubungi Kami</a>
             </nav>
-            <div class="flex items-center gap-4">
-                <button id="dark-mode-toggle" class="text-2xl p-2 rounded-full text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 transition">
+            
+            <!-- Right Actions -->
+            <div class="flex items-center gap-3 md:gap-4 z-10 ml-auto md:ml-0">
+                <button id="dark-mode-toggle" class="text-xl md:text-2xl p-2 rounded-full text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 transition">
                     <i class="ph ph-moon block dark:hidden"></i>
                     <i class="ph ph-sun hidden dark:block text-yellow-400"></i>
                 </button>
@@ -188,16 +196,16 @@
     <!-- SIDEBAR MOBILE -->
     <div id="mobile-sidebar" class="fixed inset-0 z-50 pointer-events-none">
         <div class="absolute inset-0 bg-black/50 backdrop-blur-sm opacity-0 transition-opacity duration-300" id="sidebar-backdrop"></div>
-        <div class="absolute left-0 top-0 w-4/5 max-w-sm h-full bg-brand-light dark:bg-brand-dark shadow-2xl p-8 flex flex-col transform -translate-x-full transition-transform duration-500 ease-in-out pointer-events-auto" id="sidebar-content">
-            <div class="flex items-center justify-between mb-12">
+        <div class="absolute left-0 top-0 w-4/5 max-w-sm h-full bg-brand-light dark:bg-brand-dark shadow-2xl p-6 md:p-8 flex flex-col transform -translate-x-full transition-transform duration-500 ease-in-out pointer-events-auto" id="sidebar-content">
+            <div class="flex items-center justify-between mb-10">
                 <a href="#" class="font-serif font-bold text-xl text-brand-primary dark:text-brand-primaryDark flex items-center gap-2">
                     <i class="ph-fill ph-cooking-pot"></i> Surabi Lembur
                 </a>
-                <button id="close-sidebar-btn" class="text-2xl text-gray-500 hover:text-red-500 bg-gray-100 dark:bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center transition">
+                <button id="close-sidebar-btn" class="text-xl text-gray-500 hover:text-red-500 bg-gray-100 dark:bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center transition">
                     <i class="ph ph-x"></i>
                 </button>
             </div>
-            <nav class="flex flex-col gap-6 text-lg font-medium text-brand-primary dark:text-brand-primaryDark flex-grow">
+            <nav class="flex flex-col gap-6 text-base font-medium text-brand-primary dark:text-brand-primaryDark flex-grow">
                 <a href="#beranda" class="mobile-link hover:translate-x-2 transition-transform">Beranda</a>
                 <a href="#kontak" class="mobile-link hover:translate-x-2 transition-transform">Lokasi</a>
                 <a href="#menu" class="mobile-link hover:translate-x-2 transition-transform">Menu</a>
@@ -206,7 +214,7 @@
                 <a href="#kontak" class="mobile-link hover:translate-x-2 transition-transform border-t border-gray-200 dark:border-gray-700 pt-6">Hubungi Kami</a>
             </nav>
             <div class="mt-auto pt-6">
-                <a href="#menu" class="block w-full text-center bg-brand-primary dark:bg-brand-primaryDark text-white dark:text-brand-dark py-4 rounded-full font-bold shadow-lg">
+                <a href="#menu" class="block w-full text-center bg-brand-primary dark:bg-brand-primaryDark text-white dark:text-brand-dark py-3 rounded-full font-bold shadow-lg">
                     Pesan Sekarang
                 </a>
             </div>
@@ -214,61 +222,60 @@
     </div>
 
     <!-- MAIN CONTENT -->
-    <main class="pt-20">
+    <main class="pt-16 md:pt-20">
 
         <!-- 1. HERO SECTION -->
-        <section id="beranda" class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 flex flex-col lg:flex-row items-center gap-12 overflow-hidden">
-            <div class="flex-1 space-y-8 text-center lg:text-left z-10" data-aos="fade-right" data-aos-duration="1000">
-                <span class="inline-block bg-brand-surface dark:bg-brand-surfaceDark text-brand-primary dark:text-brand-primaryDark text-xs font-bold px-4 py-2 rounded-full uppercase tracking-widest border border-brand-primary/10 dark:border-brand-primaryDark/10">
+        <section id="beranda" class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24 flex flex-col lg:flex-row items-center gap-10 md:gap-12 overflow-hidden">
+            <div class="flex-1 space-y-6 md:space-y-8 text-center lg:text-left z-10" data-aos="fade-right" data-aos-duration="1000">
+                <span class="inline-block bg-brand-surface dark:bg-brand-surfaceDark text-brand-primary dark:text-brand-primaryDark text-[10px] md:text-xs font-bold px-3 py-1.5 md:px-4 md:py-2 rounded-full uppercase tracking-widest border border-brand-primary/10 dark:border-brand-primaryDark/10">
                     Sajian Lokal, Sejak 2020
                 </span>
-                <h1 class="font-serif text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-brand-primary dark:text-white">
+                <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-brand-primary dark:text-white">
                     Surabi Tradisional dengan Cita Rasa Modern
                 </h1>
-                <p class="text-gray-600 dark:text-gray-400 text-base md:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                <p class="text-gray-600 dark:text-gray-400 text-sm md:text-base lg:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
                     Nikmati perpaduan sempurna resep warisan keluarga dan topping kekinian. Dibuat fresh setiap hari menggunakan tungku tanah liat untuk menjaga aroma dan rasa autentik yang selalu dirindukan.
                 </p>
-                <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start pt-4">
-                    <a href="#menu" class="w-full sm:w-auto text-center bg-brand-primary dark:bg-brand-primaryDark text-white dark:text-brand-dark px-10 py-4 rounded-full font-bold hover:shadow-xl hover:-translate-y-1 transition-all">
+                <div class="flex flex-col sm:flex-row items-center gap-3 md:gap-4 justify-center lg:justify-start pt-2 md:pt-4">
+                    <a href="#menu" class="w-full sm:w-auto text-center bg-brand-primary dark:bg-brand-primaryDark text-white dark:text-brand-dark px-8 py-3 md:px-10 md:py-4 rounded-full font-bold hover:shadow-xl hover:-translate-y-1 transition-all text-sm md:text-base">
                         PESAN MENU
                     </a>
-                    <a href="#tentang" class="w-full sm:w-auto text-center border-2 border-brand-primary dark:border-brand-primaryDark text-brand-primary dark:text-brand-primaryDark px-10 py-4 rounded-full font-bold hover:bg-brand-primary hover:text-white dark:hover:bg-brand-primaryDark dark:hover:text-brand-dark transition-all">
+                    <a href="#tentang" class="w-full sm:w-auto text-center border-2 border-brand-primary dark:border-brand-primaryDark text-brand-primary dark:text-brand-primaryDark px-8 py-3 md:px-10 md:py-4 rounded-full font-bold hover:bg-brand-primary hover:text-white dark:hover:bg-brand-primaryDark dark:hover:text-brand-dark transition-all text-sm md:text-base">
                         TENTANG KAMI
                     </a>
                 </div>
             </div>
             <div class="flex-1 w-full relative" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200">
-                <div class="absolute -inset-4 bg-brand-primary/5 dark:bg-brand-primaryDark/5 rounded-[3rem] transform rotate-3"></div>
-                <div class="relative w-full aspect-[4/5] md:aspect-square rounded-4xl overflow-hidden shadow-2xl">
-                    <!-- URL FOTO HERO BAWAAN -->
+                <div class="absolute -inset-2 md:-inset-4 bg-brand-primary/5 dark:bg-brand-primaryDark/5 rounded-[2rem] md:rounded-[3rem] transform rotate-3"></div>
+                <div class="relative w-full aspect-[4/5] md:aspect-square rounded-3xl md:rounded-4xl overflow-hidden shadow-2xl">
                     <img src="https://images.unsplash.com/photo-1598214886806-c87b84b7078b?auto=format&fit=crop&q=80&w=1000" alt="Surabi Hangat" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
                 </div>
             </div>
         </section>
 
         <!-- 2. KATALOG MENU DINAMIS -->
-        <section id="menu" class="bg-brand-surface dark:bg-brand-surfaceDark py-20 relative">
+        <section id="menu" class="bg-brand-surface dark:bg-brand-surfaceDark py-16 md:py-20 relative">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12" data-aos="fade-up">
-                    <h2 class="font-serif text-4xl md:text-5xl font-bold text-brand-primary dark:text-white mb-4">Menu Pilihan Kami</h2>
-                    <p class="text-gray-600 dark:text-gray-400 max-w-xl mx-auto">Kami meracik resep terbaik dari bahan alami. Jaminan cita rasa otentik untuk setiap momen spesialmu.</p>
+                <div class="text-center mb-10 md:mb-12" data-aos="fade-up">
+                    <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-brand-primary dark:text-white mb-3 md:mb-4">Menu Pilihan Kami</h2>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm md:text-base max-w-xl mx-auto">Kami meracik resep terbaik dari bahan alami. Jaminan cita rasa otentik untuk setiap momen spesialmu.</p>
                 </div>
                 
                 <!-- Filters -->
-                <div class="flex justify-center gap-3 mb-12 overflow-x-auto hide-scroll pb-2" data-aos="fade-up" data-aos-delay="100">
-                    <button onclick="setFilter('Semua')" id="filter-Semua" class="filter-btn bg-brand-primary text-white px-8 py-3 rounded-full text-sm font-bold whitespace-nowrap shadow-md transition">Semua</button>
-                    <button onclick="setFilter('Manis')" id="filter-Manis" class="filter-btn bg-brand-light dark:bg-brand-dark text-gray-600 dark:text-gray-300 px-8 py-3 rounded-full text-sm font-bold whitespace-nowrap hover:bg-gray-200 dark:hover:bg-zinc-800 transition">Manis</button>
-                    <button onclick="setFilter('Asin')" id="filter-Asin" class="filter-btn bg-brand-light dark:bg-brand-dark text-gray-600 dark:text-gray-300 px-8 py-3 rounded-full text-sm font-bold whitespace-nowrap hover:bg-gray-200 dark:hover:bg-zinc-800 transition">Asin</button>
+                <div class="flex justify-start sm:justify-center gap-2 md:gap-3 mb-10 overflow-x-auto hide-scroll pb-2" data-aos="fade-up" data-aos-delay="100">
+                    <button onclick="setFilter('Semua')" id="filter-Semua" class="filter-btn bg-brand-primary text-white px-6 py-2.5 md:px-8 md:py-3 rounded-full text-xs md:text-sm font-bold whitespace-nowrap shadow-md transition">Semua</button>
+                    <button onclick="setFilter('Manis')" id="filter-Manis" class="filter-btn bg-brand-light dark:bg-brand-dark text-gray-600 dark:text-gray-300 px-6 py-2.5 md:px-8 md:py-3 rounded-full text-xs md:text-sm font-bold whitespace-nowrap hover:bg-gray-200 dark:hover:bg-zinc-800 transition">Manis</button>
+                    <button onclick="setFilter('Asin')" id="filter-Asin" class="filter-btn bg-brand-light dark:bg-brand-dark text-gray-600 dark:text-gray-300 px-6 py-2.5 md:px-8 md:py-3 rounded-full text-xs md:text-sm font-bold whitespace-nowrap hover:bg-gray-200 dark:hover:bg-zinc-800 transition">Asin</button>
                 </div>
 
                 <!-- Grid Menu Dynamic -->
-                <div id="menu-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Card Menu Akan Di-Generate via Javascript Di Sini -->
+                <div id="menu-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                    <!-- Card Menu Akan Di-Generate -->
                 </div>
 
                 <!-- Button Lihat Selengkapnya -->
-                <div class="text-center mt-12" id="load-more-container" data-aos="fade-up">
-                    <button onclick="loadMoreMenu()" class="border-2 border-brand-primary dark:border-brand-primaryDark text-brand-primary dark:text-brand-primaryDark px-10 py-3 rounded-full font-bold hover:bg-brand-primary hover:text-white dark:hover:bg-brand-primaryDark dark:hover:text-brand-dark transition-all">
+                <div class="text-center mt-10 md:mt-12" id="load-more-container" data-aos="fade-up">
+                    <button onclick="loadMoreMenu()" class="border-2 border-brand-primary dark:border-brand-primaryDark text-brand-primary dark:text-brand-primaryDark px-8 py-2.5 md:px-10 md:py-3 rounded-full text-sm md:text-base font-bold hover:bg-brand-primary hover:text-white dark:hover:bg-brand-primaryDark dark:hover:text-brand-dark transition-all">
                         Lihat Selengkapnya
                     </button>
                 </div>
@@ -276,115 +283,110 @@
         </section>
 
         <!-- 3. TENTANG KAMI -->
-        <section id="tentang" class="py-20 md:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                <div class="space-y-8" data-aos="fade-right">
-                    <span class="inline-block bg-brand-surface dark:bg-brand-surfaceDark text-brand-primary dark:text-brand-primaryDark text-xs font-bold px-4 py-2 rounded-full uppercase tracking-widest">
+        <section id="tentang" class="py-16 md:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div class="space-y-6 md:space-y-8" data-aos="fade-right">
+                    <span class="inline-block bg-brand-surface dark:bg-brand-surfaceDark text-brand-primary dark:text-brand-primaryDark text-[10px] md:text-xs font-bold px-3 py-1.5 md:px-4 md:py-2 rounded-full uppercase tracking-widest">
                         Tentang Kami
                     </span>
-                    <h2 class="font-serif text-4xl md:text-5xl font-bold text-brand-primary dark:text-white leading-tight">
+                    <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-brand-primary dark:text-white leading-tight">
                         Warisan Rasa dari Hati
                     </h2>
-                    <p class="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
+                    <p class="text-gray-600 dark:text-gray-400 text-sm md:text-lg leading-relaxed">
                         Perjalanan kami dimulai dari sebuah keinginan sederhana: menghadirkan kembali kehangatan tradisi dalam setiap gigitan, menyatukan resep warisan dengan sentuhan modern. Berdiri sejak tahun 2020, Surabi Lembur lahir dari kecintaan kami pada kuliner Nusantara.
                     </p>
                     
-                    <blockquote class="bg-brand-surface dark:bg-brand-surfaceDark p-8 rounded-4xl relative mt-8">
-                        <i class="ph-fill ph-quotes text-5xl text-brand-primary/10 dark:text-brand-primaryDark/10 absolute top-6 left-6"></i>
-                        <p class="italic font-serif text-xl text-brand-primary dark:text-gray-200 relative z-10 leading-relaxed pt-2">
+                    <blockquote class="bg-brand-surface dark:bg-brand-surfaceDark p-6 md:p-8 rounded-3xl md:rounded-4xl relative mt-6 md:mt-8">
+                        <i class="ph-fill ph-quotes text-3xl md:text-5xl text-brand-primary/10 dark:text-brand-primaryDark/10 absolute top-4 left-4 md:top-6 md:left-6"></i>
+                        <p class="italic font-serif text-base md:text-xl text-brand-primary dark:text-gray-200 relative z-10 leading-relaxed pt-2">
                             "Surabi bukan sekadar makanan, ini adalah medium yang menyatukan generasi, mengikat kenangan masa kecil dengan cita rasa masa kini."
                         </p>
-                        <footer class="mt-6 flex items-center gap-4">
-                            <div class="w-12 h-12 bg-gray-300 rounded-full overflow-hidden">
-                                <!-- URL FOTO FOUNDER BAWAAN -->
+                        <footer class="mt-4 md:mt-6 flex items-center gap-3 md:gap-4">
+                            <div class="w-10 h-10 md:w-12 md:h-12 bg-gray-300 rounded-full overflow-hidden">
                                 <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200" alt="Bu Euis" class="w-full h-full object-cover">
                             </div>
                             <div>
-                                <strong class="block text-brand-primary dark:text-brand-primaryDark font-bold">Bu Euis</strong>
-                                <span class="text-sm text-gray-500">Pendiri Surabi Lembur</span>
+                                <strong class="block text-brand-primary dark:text-brand-primaryDark font-bold text-sm md:text-base">Bu Euis</strong>
+                                <span class="text-[10px] md:text-sm text-gray-500">Pendiri Surabi Lembur</span>
                             </div>
                         </footer>
                     </blockquote>
                 </div>
                 
-                <div class="grid grid-cols-1 gap-6" data-aos="fade-left">
-                    <div class="relative rounded-4xl overflow-hidden shadow-2xl h-[400px]">
-                        <!-- URL FOTO DAPUR BAWAAN -->
+                <div class="grid grid-cols-1 gap-4 md:gap-6" data-aos="fade-left">
+                    <div class="relative rounded-3xl md:rounded-4xl overflow-hidden shadow-2xl h-[300px] md:h-[400px]">
                         <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=800" alt="Dapur Tradisional" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
                     </div>
                     
-                    <!-- Stats -->
-                    <div class="grid grid-cols-3 gap-4 text-center bg-brand-surface dark:bg-brand-surfaceDark p-8 rounded-4xl shadow-sm mt-2">
-                        <div>
-                            <p class="text-3xl md:text-4xl font-serif font-extrabold text-brand-primary dark:text-brand-primaryDark">1000+</p>
-                            <p class="text-xs text-gray-500 mt-2 uppercase font-bold tracking-wider">Pelanggan</p>
+                    <!-- Stats Section Diperbaiki untuk HP -->
+                    <div class="grid grid-cols-3 gap-2 sm:gap-4 text-center bg-brand-surface dark:bg-brand-surfaceDark p-4 sm:p-6 md:p-8 rounded-3xl md:rounded-4xl shadow-sm mt-2">
+                        <div class="px-1 md:px-0">
+                            <p class="text-2xl sm:text-3xl md:text-4xl font-serif font-extrabold text-brand-primary dark:text-brand-primaryDark">1000+</p>
+                            <p class="text-[9px] sm:text-xs md:text-sm text-gray-500 mt-1 sm:mt-2 uppercase font-bold tracking-wider">Pelanggan</p>
                         </div>
-                        <div class="border-x border-gray-300 dark:border-gray-700">
-                            <p class="text-3xl md:text-4xl font-serif font-extrabold text-brand-primary dark:text-brand-primaryDark">4</p>
-                            <p class="text-xs text-gray-500 mt-2 uppercase font-bold tracking-wider">Tahun Pengalaman</p>
+                        <div class="border-x border-gray-300 dark:border-gray-700 px-1 md:px-0 flex flex-col justify-center items-center">
+                            <p class="text-2xl sm:text-3xl md:text-4xl font-serif font-extrabold text-brand-primary dark:text-brand-primaryDark">4</p>
+                            <p class="text-[9px] sm:text-xs md:text-sm text-gray-500 mt-1 sm:mt-2 uppercase font-bold tracking-wider">Tahun<br class="block md:hidden"> Pengalaman</p>
                         </div>
-                        <div>
-                            <p class="text-3xl md:text-4xl font-serif font-extrabold text-brand-primary dark:text-brand-primaryDark flex items-center justify-center gap-1">
-                                4.9 <i class="ph-fill ph-star text-brand-accent text-2xl"></i>
+                        <div class="px-1 md:px-0 flex flex-col justify-center items-center">
+                            <p class="text-2xl sm:text-3xl md:text-4xl font-serif font-extrabold text-brand-primary dark:text-brand-primaryDark flex items-center justify-center gap-0.5 md:gap-1">
+                                4.9 <i class="ph-fill ph-star text-brand-accent text-lg sm:text-2xl"></i>
                             </p>
-                            <p class="text-xs text-gray-500 mt-2 uppercase font-bold tracking-wider">Rating Kami</p>
+                            <p class="text-[9px] sm:text-xs md:text-sm text-gray-500 mt-1 sm:mt-2 uppercase font-bold tracking-wider">Rating<br class="block md:hidden"> Kami</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 4. TESTIMONIAL -->
-        <section id="testimonial" class="bg-brand-surface dark:bg-brand-surfaceDark py-20">
+        <!-- 4. TESTIMONIAL DIPERBAIKI (TIDAK JENGLOT) -->
+        <section id="testimonial" class="bg-brand-surface dark:bg-brand-surfaceDark py-16 md:py-20">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
-                    <h2 class="font-serif text-4xl md:text-5xl font-bold text-brand-primary dark:text-white mb-6">Kata Mereka</h2>
-                    <p class="text-gray-600 dark:text-gray-400 text-lg">Merasakan kehangatan tradisi melalui setiap gigitan. Inilah cerita dari keluarga besar penikmat sajian autentik Surabi Lembur.</p>
+                <div class="text-center max-w-2xl mx-auto mb-10 md:mb-16" data-aos="fade-up">
+                    <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-brand-primary dark:text-white mb-4 md:mb-6">Kata Mereka</h2>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm md:text-lg">Merasakan kehangatan tradisi melalui setiap gigitan. Inilah cerita dari keluarga besar penikmat sajian autentik Surabi Lembur.</p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                     <!-- Review 1 -->
-                    <div class="bg-brand-light dark:bg-brand-dark p-8 md:p-10 rounded-4xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col" data-aos="fade-up" data-aos-delay="100">
-                        <div class="flex text-brand-accent mb-6 text-sm gap-1">
+                    <div class="bg-brand-light dark:bg-brand-dark p-6 md:p-10 rounded-3xl md:rounded-4xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex text-brand-accent mb-4 md:mb-6 text-sm gap-1">
                             <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
                         </div>
-                        <p class="italic text-gray-600 dark:text-gray-300 mb-10 leading-relaxed flex-grow">"Rasa autentik yang langsung mengingatkan saya pada masa kecil di kampung halaman. Teksturnya sangat lembut, pinggirannya renyah sempurna, dan topping oncomnya juara."</p>
-                        <div class="flex items-center gap-4 border-t border-gray-100 dark:border-gray-800 pt-6">
-                            <!-- FOTO PROFIL TESTI 1 -->
-                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150" alt="Andini" class="w-14 h-14 rounded-full object-cover shadow-sm">
+                        <p class="italic text-sm md:text-base text-gray-600 dark:text-gray-300 mb-6 md:mb-10 leading-relaxed flex-grow">"Rasa autentik yang langsung mengingatkan saya pada masa kecil di kampung halaman. Teksturnya sangat lembut, pinggirannya renyah sempurna."</p>
+                        <div class="flex items-center gap-3 md:gap-4 border-t border-gray-100 dark:border-gray-800 pt-4 md:pt-6">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150" alt="Andini" class="w-12 h-12 md:w-14 md:h-14 rounded-full object-cover shadow-sm">
                             <div>
-                                <h4 class="font-bold text-brand-primary dark:text-white text-base">Andini Kusuma</h4>
-                                <p class="text-sm text-gray-500">Penikmat Setia</p>
+                                <h4 class="font-bold text-brand-primary dark:text-white text-sm md:text-base">Andini Kusuma</h4>
+                                <p class="text-[10px] md:text-sm text-gray-500">Penikmat Setia</p>
                             </div>
                         </div>
                     </div>
                     <!-- Review 2 -->
-                    <div class="bg-brand-light dark:bg-brand-dark p-8 md:p-10 rounded-4xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col" data-aos="fade-up" data-aos-delay="200">
-                        <div class="flex text-brand-accent mb-6 text-sm gap-1">
+                    <div class="bg-brand-light dark:bg-brand-dark p-6 md:p-10 rounded-3xl md:rounded-4xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col" data-aos="fade-up" data-aos-delay="200">
+                        <div class="flex text-brand-accent mb-4 md:mb-6 text-sm gap-1">
                             <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
                         </div>
-                        <p class="italic text-gray-600 dark:text-gray-300 mb-10 leading-relaxed flex-grow">"Presentasi makanannya sangat elegan untuk ukuran jajanan tradisional. Surabi kinca duriannya benar-benar lumer di mulut. Pengalaman kuliner yang berkelas."</p>
-                        <div class="flex items-center gap-4 border-t border-gray-100 dark:border-gray-800 pt-6">
-                            <!-- FOTO PROFIL TESTI 2 -->
-                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=150" alt="Budi Santoso" class="w-14 h-14 rounded-full object-cover shadow-sm">
+                        <p class="italic text-sm md:text-base text-gray-600 dark:text-gray-300 mb-6 md:mb-10 leading-relaxed flex-grow">"Presentasi makanannya sangat elegan untuk ukuran jajanan tradisional. Surabi kinca duriannya benar-benar lumer di mulut. Kelas!"</p>
+                        <div class="flex items-center gap-3 md:gap-4 border-t border-gray-100 dark:border-gray-800 pt-4 md:pt-6">
+                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=150" alt="Budi Santoso" class="w-12 h-12 md:w-14 md:h-14 rounded-full object-cover shadow-sm">
                             <div>
-                                <h4 class="font-bold text-brand-primary dark:text-white text-base">Budi Santoso</h4>
-                                <p class="text-sm text-gray-500">Kritikus Makanan Lokal</p>
+                                <h4 class="font-bold text-brand-primary dark:text-white text-sm md:text-base">Budi Santoso</h4>
+                                <p class="text-[10px] md:text-sm text-gray-500">Kritikus Makanan Lokal</p>
                             </div>
                         </div>
                     </div>
                     <!-- Review 3 -->
-                    <div class="bg-brand-light dark:bg-brand-dark p-8 md:p-10 rounded-4xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col" data-aos="fade-up" data-aos-delay="300">
-                        <div class="flex text-brand-accent mb-6 text-sm gap-1">
+                    <div class="bg-brand-light dark:bg-brand-dark p-6 md:p-10 rounded-3xl md:rounded-4xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col" data-aos="fade-up" data-aos-delay="300">
+                        <div class="flex text-brand-accent mb-4 md:mb-6 text-sm gap-1">
                             <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
                         </div>
-                        <p class="italic text-gray-600 dark:text-gray-300 mb-10 leading-relaxed flex-grow">"Sering mampir ke sini sepulang kerja untuk bersantai. Aroma tungku tanah liat yang khas selalu berhasil meredakan lelah. Packaging take-away nya eksklusif."</p>
-                        <div class="flex items-center gap-4 border-t border-gray-100 dark:border-gray-800 pt-6">
-                            <!-- FOTO PROFIL TESTI 3 -->
-                            <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&q=80&w=150" alt="Siti Aminah" class="w-14 h-14 rounded-full object-cover shadow-sm">
+                        <p class="italic text-sm md:text-base text-gray-600 dark:text-gray-300 mb-6 md:mb-10 leading-relaxed flex-grow">"Sering mampir ke sini sepulang kerja untuk bersantai. Aroma tungku tanah liat yang khas selalu berhasil meredakan lelah."</p>
+                        <div class="flex items-center gap-3 md:gap-4 border-t border-gray-100 dark:border-gray-800 pt-4 md:pt-6">
+                            <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&q=80&w=150" alt="Siti Aminah" class="w-12 h-12 md:w-14 md:h-14 rounded-full object-cover shadow-sm">
                             <div>
-                                <h4 class="font-bold text-brand-primary dark:text-white text-base">Siti Aminah</h4>
-                                <p class="text-sm text-gray-500">Pecinta Kuliner</p>
+                                <h4 class="font-bold text-brand-primary dark:text-white text-sm md:text-base">Siti Aminah</h4>
+                                <p class="text-[10px] md:text-sm text-gray-500">Pecinta Kuliner</p>
                             </div>
                         </div>
                     </div>
@@ -392,107 +394,106 @@
             </div>
         </section>
 
-        <!-- 5. HUBUNGI KAMI & LOKASI -->
-        <section id="kontak" class="py-20 md:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="font-serif text-4xl md:text-5xl font-bold text-brand-primary dark:text-white mb-6">Hubungi Kami</h2>
-                <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg">Ada pertanyaan tentang pesanan, menu, atau ingin berkolaborasi? Kami dengan senang hati akan membantu Anda. Jangan ragu untuk menyapa!</p>
+        <!-- 5. HUBUNGI KAMI DIPERBAIKI (TIDAK KAKU DI HP) -->
+        <section id="kontak" class="py-16 md:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10 md:mb-16" data-aos="fade-up">
+                <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-brand-primary dark:text-white mb-4 md:mb-6">Hubungi Kami</h2>
+                <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-sm md:text-lg">Ada pertanyaan tentang pesanan, menu, atau ingin berkolaborasi? Kami dengan senang hati akan membantu Anda. Jangan ragu untuk menyapa!</p>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
-                <!-- Kolom Kiri: Kontak & FAQ -->
-                <div class="lg:col-span-5 space-y-10" data-aos="fade-right">
-                    <div class="bg-brand-surface dark:bg-brand-surfaceDark p-8 rounded-4xl">
-                        <h3 class="font-bold text-2xl mb-8 dark:text-white">Sapa Kami Langsung</h3>
-                        <div class="space-y-6">
-                            <div class="flex items-center gap-5">
-                                <div class="w-14 h-14 bg-[#E0D7CB] dark:bg-[#3D352F] rounded-full flex items-center justify-center text-brand-primary dark:text-white text-2xl shadow-sm hover:scale-110 transition-transform">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
+                <!-- Kolom Kiri -->
+                <div class="lg:col-span-5 space-y-8 md:space-y-10" data-aos="fade-right">
+                    <div class="bg-brand-surface dark:bg-brand-surfaceDark p-6 sm:p-8 rounded-3xl md:rounded-4xl">
+                        <h3 class="font-bold text-xl md:text-2xl mb-6 md:mb-8 dark:text-white">Sapa Kami Langsung</h3>
+                        <div class="space-y-5 md:space-y-6">
+                            <div class="flex items-center gap-4 md:gap-5">
+                                <div class="w-12 h-12 md:w-14 md:h-14 bg-[#E0D7CB] dark:bg-[#3D352F] rounded-full flex items-center justify-center text-brand-primary dark:text-white text-xl md:text-2xl shadow-sm hover:scale-110 transition-transform">
                                     <i class="ph-fill ph-whatsapp-logo"></i>
                                 </div>
                                 <div>
-                                    <p class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-1">WhatsApp</p>
-                                    <p class="font-semibold text-lg dark:text-gray-200">+62 812 3456 7890</p>
+                                    <p class="text-[10px] md:text-xs font-bold text-gray-500 uppercase tracking-widest mb-0.5 md:mb-1">WhatsApp</p>
+                                    <p class="font-semibold text-base md:text-lg dark:text-gray-200">+62 812 3456 7890</p>
                                 </div>
                             </div>
-                            <div class="flex items-center gap-5">
-                                <div class="w-14 h-14 bg-[#E0D7CB] dark:bg-[#3D352F] rounded-full flex items-center justify-center text-brand-primary dark:text-white text-2xl shadow-sm hover:scale-110 transition-transform">
+                            <div class="flex items-center gap-4 md:gap-5">
+                                <div class="w-12 h-12 md:w-14 md:h-14 bg-[#E0D7CB] dark:bg-[#3D352F] rounded-full flex items-center justify-center text-brand-primary dark:text-white text-xl md:text-2xl shadow-sm hover:scale-110 transition-transform">
                                     <i class="ph-fill ph-envelope-simple"></i>
                                 </div>
                                 <div>
-                                    <p class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-1">Email</p>
-                                    <p class="font-semibold text-lg dark:text-gray-200">halo@surabilembur.com</p>
+                                    <p class="text-[10px] md:text-xs font-bold text-gray-500 uppercase tracking-widest mb-0.5 md:mb-1">Email</p>
+                                    <p class="font-semibold text-base md:text-lg dark:text-gray-200">halo@surabilembur.com</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- FAQ -->
-                    <div class="bg-white dark:bg-brand-surfaceDark border border-gray-200 dark:border-gray-800 p-8 rounded-4xl shadow-sm">
-                        <h3 class="font-bold text-2xl mb-6 dark:text-white">Pertanyaan Umum</h3>
+                    <div class="bg-white dark:bg-brand-surfaceDark border border-gray-200 dark:border-gray-800 p-6 sm:p-8 rounded-3xl md:rounded-4xl shadow-sm">
+                        <h3 class="font-bold text-xl md:text-2xl mb-4 md:mb-6 dark:text-white">Pertanyaan Umum</h3>
                         <div class="space-y-2">
                             <div class="border-b border-gray-100 dark:border-gray-700">
-                                <button class="w-full text-left py-4 flex justify-between items-center font-semibold text-gray-800 dark:text-gray-200 focus:outline-none accordion-btn">
+                                <button class="w-full text-left py-3 md:py-4 flex justify-between items-center font-semibold text-sm md:text-base text-gray-800 dark:text-gray-200 focus:outline-none accordion-btn">
                                     Apakah bisa pesan dalam jumlah besar?
                                     <i class="ph ph-caret-down accordion-icon text-gray-400"></i>
                                 </button>
                                 <div class="accordion-content">
-                                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Tentu bisa! Kami melayani pemesanan dalam jumlah besar dengan pemberitahuan minimal H-2.</p>
+                                    <p class="text-gray-600 dark:text-gray-400 text-xs md:text-sm leading-relaxed">Tentu bisa! Kami melayani pemesanan dalam jumlah besar dengan pemberitahuan minimal H-2.</p>
                                 </div>
                             </div>
                             <div>
-                                <button class="w-full text-left py-4 flex justify-between items-center font-semibold text-gray-800 dark:text-gray-200 focus:outline-none accordion-btn">
+                                <button class="w-full text-left py-3 md:py-4 flex justify-between items-center font-semibold text-sm md:text-base text-gray-800 dark:text-gray-200 focus:outline-none accordion-btn">
                                     Berapa lama surabi bisa tahan?
                                     <i class="ph ph-caret-down accordion-icon text-gray-400"></i>
                                 </button>
                                 <div class="accordion-content">
-                                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Surabi kami tahan hingga 12 jam di suhu ruang, dan maksimal 2 hari di dalam kulkas.</p>
+                                    <p class="text-gray-600 dark:text-gray-400 text-xs md:text-sm leading-relaxed">Surabi kami tahan hingga 12 jam di suhu ruang, dan maksimal 2 hari di dalam kulkas.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Kolom Kanan: Form & Map -->
-                <div class="lg:col-span-7 space-y-10" data-aos="fade-left">
-                    
-                    <!-- FORM KONTAK DIPERBARUI -->
-                    <div class="bg-[#EBE4D8] dark:bg-[#2A2420] p-8 md:p-10 rounded-4xl shadow-inner">
-                        <h3 class="font-bold text-2xl mb-8 dark:text-white">Kirim Pesan</h3>
-                        <form id="contactForm" class="space-y-6" onsubmit="handleFormSubmit(event)">
+                <!-- Kolom Kanan -->
+                <div class="lg:col-span-7 space-y-8 md:space-y-10" data-aos="fade-left">
+                    <!-- Form Kontak -->
+                    <div class="bg-[#EBE4D8] dark:bg-[#2A2420] p-6 sm:p-8 md:p-10 rounded-3xl md:rounded-4xl shadow-inner">
+                        <h3 class="font-bold text-xl md:text-2xl mb-6 md:mb-8 dark:text-white">Kirim Pesan</h3>
+                        <form id="contactForm" class="space-y-4 md:space-y-6" onsubmit="handleFormSubmit(event)">
                             <div>
-                                <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2 tracking-wide">Nama Lengkap</label>
-                                <input type="text" id="inputNama" required placeholder="Masukkan nama Anda" class="w-full px-5 py-4 rounded-2xl border-0 ring-1 ring-gray-300 dark:ring-gray-700 bg-white dark:bg-[#1A1614] dark:text-white focus:outline-none focus:ring-2 focus:ring-brand-primary transition-shadow">
+                                <label class="block text-xs md:text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5 md:mb-2 tracking-wide">Nama Lengkap</label>
+                                <input type="text" id="inputNama" required placeholder="Masukkan nama Anda" class="w-full px-4 py-3 md:px-5 md:py-4 text-sm md:text-base rounded-xl md:rounded-2xl border-0 ring-1 ring-gray-300 dark:ring-gray-700 bg-white dark:bg-[#1A1614] dark:text-white focus:outline-none focus:ring-2 focus:ring-brand-primary transition-shadow">
                             </div>
                             <div>
-                                <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2 tracking-wide">Alamat Email</label>
-                                <input type="email" id="inputEmail" required placeholder="nama@email.com" class="w-full px-5 py-4 rounded-2xl border-0 ring-1 ring-gray-300 dark:ring-gray-700 bg-white dark:bg-[#1A1614] dark:text-white focus:outline-none focus:ring-2 focus:ring-brand-primary transition-shadow">
+                                <label class="block text-xs md:text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5 md:mb-2 tracking-wide">Alamat Email</label>
+                                <input type="email" id="inputEmail" required placeholder="nama@email.com" class="w-full px-4 py-3 md:px-5 md:py-4 text-sm md:text-base rounded-xl md:rounded-2xl border-0 ring-1 ring-gray-300 dark:ring-gray-700 bg-white dark:bg-[#1A1614] dark:text-white focus:outline-none focus:ring-2 focus:ring-brand-primary transition-shadow">
                             </div>
                             <div>
-                                <label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2 tracking-wide">Pesan Anda</label>
-                                <textarea id="inputPesan" required rows="4" placeholder="Tulis pesan, pertanyaan, atau saran Anda di sini..." class="w-full px-5 py-4 rounded-2xl border-0 ring-1 ring-gray-300 dark:ring-gray-700 bg-white dark:bg-[#1A1614] dark:text-white focus:outline-none focus:ring-2 focus:ring-brand-primary transition-shadow resize-none"></textarea>
+                                <label class="block text-xs md:text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5 md:mb-2 tracking-wide">Pesan Anda</label>
+                                <textarea id="inputPesan" required rows="4" placeholder="Tulis pesan..." class="w-full px-4 py-3 md:px-5 md:py-4 text-sm md:text-base rounded-xl md:rounded-2xl border-0 ring-1 ring-gray-300 dark:ring-gray-700 bg-white dark:bg-[#1A1614] dark:text-white focus:outline-none focus:ring-2 focus:ring-brand-primary transition-shadow resize-none"></textarea>
                             </div>
-                            <button type="submit" class="w-full bg-brand-primary dark:bg-brand-primaryDark text-white dark:text-brand-dark py-5 rounded-2xl font-bold hover:shadow-xl hover:-translate-y-1 transition-all flex items-center justify-center gap-2 text-lg">
+                            <button type="submit" class="w-full bg-brand-primary dark:bg-brand-primaryDark text-white dark:text-brand-dark py-4 md:py-5 rounded-xl md:rounded-2xl font-bold hover:shadow-xl hover:-translate-y-1 transition-all flex items-center justify-center gap-2 text-sm md:text-lg">
                                 LANJUTKAN PESAN <i class="ph-bold ph-paper-plane-right"></i>
                             </button>
                         </form>
                     </div>
 
-                    <!-- Kunjungi Kami -->
-                    <div class="bg-brand-surface dark:bg-brand-surfaceDark p-8 rounded-4xl flex flex-col md:flex-row gap-8 items-center">
-                        <div class="w-full md:w-1/2 relative h-48 md:h-full min-h-[200px] rounded-3xl overflow-hidden shadow-md">
+                    <!-- Map -->
+                    <div class="bg-brand-surface dark:bg-brand-surfaceDark p-6 sm:p-8 rounded-3xl md:rounded-4xl flex flex-col sm:flex-row gap-6 md:gap-8 items-center">
+                        <div class="w-full sm:w-1/2 relative h-40 sm:h-48 md:h-full min-h-[160px] rounded-2xl md:rounded-3xl overflow-hidden shadow-md">
                             <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800" alt="Peta" class="w-full h-full object-cover">
                             <div class="absolute inset-0 flex items-center justify-center bg-black/10">
-                                <span class="bg-brand-primary text-white text-sm font-bold px-4 py-2 rounded-full shadow-2xl flex items-center gap-2">
+                                <span class="bg-brand-primary text-white text-[10px] md:text-sm font-bold px-3 py-1.5 md:px-4 md:py-2 rounded-full shadow-2xl flex items-center gap-1.5 md:gap-2">
                                     <i class="ph-fill ph-map-pin"></i> Surabi Lembur
                                 </span>
                             </div>
                         </div>
-                        <div class="w-full md:w-1/2 space-y-6">
+                        <div class="w-full sm:w-1/2 space-y-4 md:space-y-6 text-center sm:text-left">
                             <div>
-                                <h4 class="font-bold text-xl mb-3 flex items-center gap-2 dark:text-white">
+                                <h4 class="font-bold text-lg md:text-xl mb-2 md:mb-3 flex items-center justify-center sm:justify-start gap-2 dark:text-white">
                                     <i class="ph-fill ph-storefront text-brand-primary dark:text-brand-primaryDark"></i> Alamat Utama
                                 </h4>
-                                <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Jl. Ahmad Yani No. 123,<br>Sumedang, Jawa Barat<br>Indonesia</p>
+                                <p class="text-gray-600 dark:text-gray-400 text-xs md:text-sm leading-relaxed">Jl. Ahmad Yani No. 123,<br>Sumedang, Jawa Barat<br>Indonesia</p>
                             </div>
                         </div>
                     </div>
@@ -503,8 +504,8 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-brand-surface dark:bg-brand-surfaceDark pt-20 pb-8 mt-10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-gray-500 dark:text-gray-400 font-medium">
+    <footer class="bg-brand-surface dark:bg-brand-surfaceDark pt-16 md:pt-20 pb-8 mt-6 md:mt-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs md:text-sm text-gray-500 dark:text-gray-400 font-medium">
             &copy; 2026 Surabi Lembur. Sajian Autentik Pedesaan
         </div>
     </footer>
@@ -559,7 +560,7 @@
         const SUPABASE_URL = 'https://nzmzljgowwpbnyjqdnvy.supabase.co'; 
         const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im56bXpsamdvd3dwYm55anFkbnZ5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI1NDU5NTcsImV4cCI6MjA5ODEyMTk1N30.3RnzfaqDTw2bvo2h1AEb6ee6zPEokTBUtvnJ9LHFTaM';
         
-        const supabaseUrlConfigured = SUPABASE_URL !== 'https://XYZ.supabase.co'; // Flag untuk cek apakah user sudah setup
+        const supabaseUrlConfigured = SUPABASE_URL !== 'https://XYZ.supabase.co'; 
         let supabaseClient = null;
         if(supabaseUrlConfigured) {
             supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
@@ -567,9 +568,8 @@
 
         let allMenuData = [];
         let currentCategoryFilter = 'Semua';
-        let displayedCount = 4; // Limit awal
+        let displayedCount = 4;
 
-        // Data dummy sebagai fallback jika belum dikoneksikan ke Supabase
         const dummyData = [
             { id: 1, nama_produk: 'Surabi Original', deskripsi: 'Cita rasa klasik tradisional dengan gurihnya santan murni.', harga: 2000, kategori: 'Asin', rating: 4.9, foto_produk: 'https://images.unsplash.com/photo-1528207776546-384111d0bb89?auto=format&fit=crop&q=80&w=800', badge: 'Best Seller' },
             { id: 2, nama_produk: 'Surabi Cokelat', deskripsi: 'Lelehan cokelat hitam pekat yang kaya rasa.', harga: 7000, kategori: 'Manis', rating: 4.8, foto_produk: 'https://images.unsplash.com/photo-1618897996318-5a901fa6ca71?auto=format&fit=crop&q=80&w=800', badge: 'Best Seller' },
@@ -582,13 +582,11 @@
         async function fetchMenu() {
             if (supabaseClient) {
                 try {
-                    // Tarik data dari tabel "produk"
                     const { data, error } = await supabaseClient.from('produk').select('*');
                     if (error) throw error;
                     allMenuData = data.length ? data : dummyData; 
                 } catch (err) {
-                    console.error("Error fetching Supabase:", err);
-                    allMenuData = dummyData; // Gunakan fallback jika error/belum tersambung
+                    allMenuData = dummyData; 
                 }
             } else {
                 allMenuData = dummyData;
@@ -600,43 +598,36 @@
             const grid = document.getElementById('menu-grid');
             grid.innerHTML = ''; 
 
-            // Filter data sesuai kategori aktif
             let filteredData = allMenuData;
             if (currentCategoryFilter !== 'Semua') {
                 filteredData = allMenuData.filter(item => item.kategori === currentCategoryFilter);
             }
 
-            // Potong data sesuai limit "Lihat Selengkapnya"
             const itemsToShow = filteredData.slice(0, displayedCount);
 
             itemsToShow.forEach(item => {
-                // Konversi format uang
                 const formatHarga = new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', maximumFractionDigits: 0 }).format(item.harga);
-                
-                // Cek badge (Best seller dll)
-                const badgeHtml = item.badge ? `<span class="absolute top-4 right-4 bg-brand-accent text-brand-primary text-xs font-bold px-3 py-1.5 rounded-full z-10 shadow-sm">${item.badge}</span>` : '';
+                const badgeHtml = item.badge ? `<span class="absolute top-3 right-3 md:top-4 md:right-4 bg-brand-accent text-brand-primary text-[10px] md:text-xs font-bold px-2 py-1 md:px-3 md:py-1.5 rounded-full z-10 shadow-sm">${item.badge}</span>` : '';
 
-                // Buat struktur HTML per kartu
                 const cardHtml = `
-                    <div class="group cursor-pointer bg-brand-light dark:bg-brand-dark rounded-4xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300" onclick='openModal(${JSON.stringify(item).replace(/'/g, "&#39;")})' data-aos="fade-up">
+                    <div class="group cursor-pointer bg-brand-light dark:bg-brand-dark rounded-3xl md:rounded-4xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 md:hover:-translate-y-2 transition-all duration-300" onclick='openModal(${JSON.stringify(item).replace(/'/g, "&#39;")})' data-aos="fade-up">
                         <div class="relative aspect-[4/3] overflow-hidden">
-                            <span class="absolute top-4 left-4 bg-white/90 dark:bg-black/80 backdrop-blur-md text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1 z-10 text-brand-primary dark:text-white shadow-sm">
+                            <span class="absolute top-3 left-3 md:top-4 md:left-4 bg-white/90 dark:bg-black/80 backdrop-blur-md text-[10px] md:text-xs font-bold px-2 py-1 md:px-3 md:py-1.5 rounded-full flex items-center gap-1 z-10 text-brand-primary dark:text-white shadow-sm">
                                 <i class="ph-fill ph-star text-brand-accent"></i> ${item.rating || '4.9'}
                             </span>
                             ${badgeHtml}
                             <img src="${item.foto_produk}" alt="${item.nama_produk}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                         </div>
-                        <div class="p-6">
-                            <h3 class="font-serif font-bold text-xl mb-2 text-brand-primary dark:text-white group-hover:text-brand-accent transition-colors">${item.nama_produk}</h3>
-                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-4 line-clamp-2 leading-relaxed">${item.deskripsi}</p>
-                            <p class="font-bold text-brand-primary dark:text-brand-primaryDark text-xl">${formatHarga}</p>
+                        <div class="p-4 md:p-6">
+                            <h3 class="font-serif font-bold text-lg md:text-xl mb-1 md:mb-2 text-brand-primary dark:text-white group-hover:text-brand-accent transition-colors">${item.nama_produk}</h3>
+                            <p class="text-[10px] md:text-sm text-gray-500 dark:text-gray-400 mb-3 md:mb-4 line-clamp-2 leading-relaxed">${item.deskripsi}</p>
+                            <p class="font-bold text-brand-primary dark:text-brand-primaryDark text-base md:text-xl">${formatHarga}</p>
                         </div>
                     </div>
                 `;
                 grid.insertAdjacentHTML('beforeend', cardHtml);
             });
 
-            // Atur Visibilitas Tombol Lihat Selengkapnya
             const btnContainer = document.getElementById('load-more-container');
             if (displayedCount >= filteredData.length) {
                 btnContainer.classList.add('hidden');
@@ -645,12 +636,10 @@
             }
         }
 
-        // Logic Saat Filter DiKlik
         function setFilter(category) {
             currentCategoryFilter = category;
-            displayedCount = 4; // Reset limit setiap ganti filter
+            displayedCount = 4; 
             
-            // Ubah style tombol agar terlihat mana yang aktif
             document.querySelectorAll('.filter-btn').forEach(btn => {
                 if(btn.id === `filter-${category}`) {
                     btn.classList.replace('bg-brand-light', 'bg-brand-primary');
@@ -666,13 +655,11 @@
             renderMenuGrid();
         }
 
-        // Logic Load More (Lihat Selengkapnya)
         function loadMoreMenu() {
-            displayedCount += 4; // Tambah 4 item tiap diklik
+            displayedCount += 4; 
             renderMenuGrid();
         }
 
-        // Render pertama kali saat web diload
         fetchMenu();
 
 
@@ -684,7 +671,6 @@
         const modalContent = modal.querySelector('.modal-content');
 
         function openModal(productData) {
-            // Isi Konten Modal Berdasarkan Data Supabase
             document.getElementById('modal-img').src = productData.foto_produk;
             document.getElementById('modal-title').innerText = productData.nama_produk;
             document.getElementById('modal-rating').innerText = productData.rating || '4.9';
@@ -699,7 +685,6 @@
                 badge.classList.add('hidden');
             }
 
-            // Animasi Buka
             modal.classList.remove('hidden');
             modal.classList.add('flex');
             document.body.style.overflow = 'hidden';
@@ -718,7 +703,6 @@
                 document.body.style.overflow = '';
             }, 500); 
         }
-
 
         // ==========================================
         // 6. LOGIKA FORM KONTAK (WA / EMAIL)
@@ -760,7 +744,7 @@
         }
 
         function sendViaWA() {
-            const nomorWA = "6281234567890"; // Ganti No WA di sini
+            const nomorWA = "6281234567890"; 
             const text = `Halo Surabi Lembur, saya ${formData.nama}.%0A%0A${formData.pesan}%0A%0AEmail kontak: ${formData.email}`;
             window.open(`https://wa.me/${nomorWA}?text=${text}`, '_blank');
             closeContactModal();
@@ -768,7 +752,7 @@
         }
 
         function sendViaEmail() {
-            const emailTujuan = "halo@surabilembur.com"; // Ganti Email di sini
+            const emailTujuan = "halo@surabilembur.com"; 
             const subject = encodeURIComponent(`Pesan dari Website - ${formData.nama}`);
             const body = encodeURIComponent(`Halo Tim Surabi Lembur,\n\n${formData.pesan}\n\nSalam,\n${formData.nama}\n${formData.email}`);
             window.location.href = `mailto:${emailTujuan}?subject=${subject}&body=${body}`;
