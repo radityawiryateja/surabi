@@ -6,12 +6,12 @@ import { createClient } from '@supabase/supabase-js'
 // >>> GANTI DENGAN URL DAN ANON KEY SUPABASE KAMU <<<
 // Jika belum dikonfigurasi, aplikasi otomatis pakai dummyData.
 // ============================================================
-const SUPABASE_URL = 'https://XYZ.supabase.co'
-const SUPABASE_KEY = 'YOUR_SUPABASE_ANON_KEY'
+const SUPABASE_URL = 'https://nzmzljgowwpbnyjqdnvy.supabase.co'
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im56bXpsamdvd3dwYm55anFkbnZ5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI1NDU5NTcsImV4cCI6MjA5ODEyMTk1N30.3RnzfaqDTw2bvo2h1AEb6ee6zPEokTBUtvnJ9LHFTaM'
 
 const isSupabaseConfigured =
-  SUPABASE_URL !== 'https://XYZ.supabase.co' &&
-  SUPABASE_KEY !== 'YOUR_SUPABASE_ANON_KEY'
+  SUPABASE_URL !== 'https://nzmzljgowwpbnyjqdnvy.supabase.co' &&
+  SUPABASE_KEY !== 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im56bXpsamdvd3dwYm55anFkbnZ5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI1NDU5NTcsImV4cCI6MjA5ODEyMTk1N30.3RnzfaqDTw2bvo2h1AEb6ee6zPEokTBUtvnJ9LHFTaM'
 
 let supabase = null
 if (isSupabaseConfigured) {
