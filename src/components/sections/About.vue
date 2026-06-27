@@ -1,0 +1,107 @@
+<template>
+  <section
+    id="tentang"
+    class="py-16 md:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden"
+  >
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+      <!-- Left: Text -->
+      <div class="space-y-6 md:space-y-8" data-aos="fade-right">
+        <span
+          class="inline-block bg-brand-surface dark:bg-brand-surfaceDark text-brand-primary dark:text-brand-primaryDark text-[10px] md:text-xs font-bold px-3 py-1.5 md:px-4 md:py-2 rounded-full uppercase tracking-widest"
+        >
+          Tentang Kami
+        </span>
+
+        <h2
+          class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-brand-primary dark:text-white leading-tight"
+        >
+          Warisan Rasa dari Hati
+        </h2>
+
+        <p class="text-gray-600 dark:text-gray-400 text-sm md:text-lg leading-relaxed">
+          Perjalanan kami dimulai dari sebuah keinginan sederhana: menghadirkan kembali
+          kehangatan tradisi dalam setiap gigitan, menyatukan resep warisan dengan
+          sentuhan modern. Berdiri sejak tahun 2020, Surabi Lembur lahir dari kecintaan
+          kami pada kuliner Nusantara.
+        </p>
+
+        <!-- Blockquote -->
+        <blockquote
+          class="bg-brand-surface dark:bg-brand-surfaceDark p-6 md:p-8 rounded-3xl md:rounded-4xl relative mt-6 md:mt-8"
+        >
+          <i
+            class="ph-fill ph-quotes text-3xl md:text-5xl text-brand-primary/10 dark:text-brand-primaryDark/10 absolute top-4 left-4 md:top-6 md:left-6"
+          ></i>
+          <p
+            class="italic font-serif text-base md:text-xl text-brand-primary dark:text-gray-200 relative z-10 leading-relaxed pt-2"
+          >
+            "Surabi bukan sekadar makanan, ini adalah medium yang menyatukan generasi,
+            mengikat kenangan masa kecil dengan cita rasa masa kini."
+          </p>
+          <footer class="mt-4 md:mt-6 flex items-center gap-3 md:gap-4">
+            <div class="w-10 h-10 md:w-12 md:h-12 bg-gray-300 rounded-full overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200"
+                alt="Bu Euis"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <strong class="block text-brand-primary dark:text-brand-primaryDark font-bold text-sm md:text-base">
+                Bu Euis
+              </strong>
+              <span class="text-[10px] md:text-sm text-gray-500">Pendiri Surabi Lembur</span>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+
+      <!-- Right: Image + Stats -->
+      <div class="grid grid-cols-1 gap-4 md:gap-6" data-aos="fade-left">
+        <div class="relative rounded-3xl md:rounded-4xl overflow-hidden shadow-2xl h-[300px] md:h-[400px]">
+          <img
+            src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=800"
+            alt="Dapur Tradisional"
+            class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+          />
+        </div>
+
+        <!-- Stats strip — anti-jenglot layout preserved exactly -->
+        <div
+          class="grid grid-cols-3 gap-2 sm:gap-4 text-center bg-brand-surface dark:bg-brand-surfaceDark p-4 sm:p-6 md:p-8 rounded-3xl md:rounded-4xl shadow-sm mt-2"
+        >
+          <div class="px-1 md:px-0">
+            <p class="text-2xl sm:text-3xl md:text-4xl font-serif font-extrabold text-brand-primary dark:text-brand-primaryDark">
+              1000+
+            </p>
+            <p class="text-[9px] sm:text-xs md:text-sm text-gray-500 mt-1 sm:mt-2 uppercase font-bold tracking-wider">
+              Pelanggan
+            </p>
+          </div>
+          <div
+            class="border-x border-gray-300 dark:border-gray-700 px-1 md:px-0 flex flex-col justify-center items-center"
+          >
+            <p class="text-2xl sm:text-3xl md:text-4xl font-serif font-extrabold text-brand-primary dark:text-brand-primaryDark">
+              4
+            </p>
+            <p class="text-[9px] sm:text-xs md:text-sm text-gray-500 mt-1 sm:mt-2 uppercase font-bold tracking-wider">
+              Tahun<br class="block md:hidden" /> Pengalaman
+            </p>
+          </div>
+          <div class="px-1 md:px-0 flex flex-col justify-center items-center">
+            <p
+              class="text-2xl sm:text-3xl md:text-4xl font-serif font-extrabold text-brand-primary dark:text-brand-primaryDark flex items-center justify-center gap-0.5 md:gap-1"
+            >
+              4.9
+              <i class="ph-fill ph-star text-brand-accent text-lg sm:text-2xl"></i>
+            </p>
+            <p class="text-[9px] sm:text-xs md:text-sm text-gray-500 mt-1 sm:mt-2 uppercase font-bold tracking-wider">
+              Rating<br class="block md:hidden" /> Kami
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
