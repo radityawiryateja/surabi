@@ -92,6 +92,12 @@ export function useMenu() {
   // Filtered by category
   const filteredMenu = computed(() => {
     if (activeFilter.value === 'Semua') return allMenu.value
+    if (activeFilter.value === 'Best Seller') {
+      return allMenu.value.filter((item) => item.badge === 'Best Seller')
+    }
+    if (activeFilter.value === 'Special') {
+      return allMenu.value.filter((item) => item.badge === 'Special')
+    }
     return allMenu.value.filter((item) => item.kategori === activeFilter.value)
   })
 
