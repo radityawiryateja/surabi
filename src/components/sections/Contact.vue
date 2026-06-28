@@ -22,16 +22,17 @@
           <h3 class="font-bold text-2xl mb-8 dark:text-white">Sapa Kami Langsung</h3>
           <div class="space-y-6">
             <div v-for="channel in contactChannels" :key="channel.label" class="flex items-center gap-5">
+              <!-- flex-shrink-0 + min-w mencegah circle gepeng di container flex sempit -->
               <div
-                class="w-14 h-14 bg-[#E0D7CB] dark:bg-[#3D352F] rounded-full flex items-center justify-center text-brand-primary dark:text-white text-2xl shadow-sm hover:scale-110 transition-transform cursor-pointer"
+                class="w-14 h-14 min-w-[3.5rem] flex-shrink-0 bg-[#E0D7CB] dark:bg-[#3D352F] rounded-full flex items-center justify-center text-brand-primary dark:text-white text-2xl shadow-sm hover:scale-110 transition-transform cursor-pointer"
               >
-                <i :class="channel.icon"></i>
+                <i :class="channel.icon" class="leading-none"></i>
               </div>
-              <div>
+              <div class="min-w-0">
                 <p class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-1">
                   {{ channel.label }}
                 </p>
-                <p class="font-semibold text-lg dark:text-gray-200">{{ channel.value }}</p>
+                <p class="font-semibold text-lg dark:text-gray-200 truncate">{{ channel.value }}</p>
               </div>
             </div>
           </div>

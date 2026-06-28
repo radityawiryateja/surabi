@@ -67,34 +67,35 @@
           />
         </div>
 
-        <!-- Stats strip — anti-jenglot layout preserved exactly -->
+        <!-- Stats strip — semua kolom sejajar dengan flex col center -->
         <div
-          class="grid grid-cols-3 gap-2 sm:gap-4 text-center bg-brand-surface dark:bg-brand-surfaceDark p-4 sm:p-6 md:p-8 rounded-3xl md:rounded-4xl shadow-sm mt-2"
+          class="grid grid-cols-3 text-center bg-brand-surface dark:bg-brand-surfaceDark p-4 sm:p-6 md:p-8 rounded-3xl md:rounded-4xl shadow-sm mt-2"
         >
-          <div class="px-1 md:px-0">
-            <p class="text-2xl sm:text-3xl md:text-4xl font-serif font-extrabold text-brand-primary dark:text-brand-primaryDark">
+          <!-- Kolom 1: Pelanggan -->
+          <div class="flex flex-col justify-center items-center px-1 md:px-2">
+            <p class="text-2xl sm:text-3xl md:text-4xl font-serif font-extrabold text-brand-primary dark:text-brand-primaryDark leading-none">
               1000+
             </p>
             <p class="text-[9px] sm:text-xs md:text-sm text-gray-500 mt-1 sm:mt-2 uppercase font-bold tracking-wider">
               Pelanggan
             </p>
           </div>
-          <div
-            class="border-x border-gray-300 dark:border-gray-700 px-1 md:px-0 flex flex-col justify-center items-center"
-          >
-            <p class="text-2xl sm:text-3xl md:text-4xl font-serif font-extrabold text-brand-primary dark:text-brand-primaryDark">
+
+          <!-- Kolom 2: Tahun Pengalaman -->
+          <div class="flex flex-col justify-center items-center border-x border-gray-300 dark:border-gray-700 px-1 md:px-2">
+            <p class="text-2xl sm:text-3xl md:text-4xl font-serif font-extrabold text-brand-primary dark:text-brand-primaryDark leading-none">
               4
             </p>
             <p class="text-[9px] sm:text-xs md:text-sm text-gray-500 mt-1 sm:mt-2 uppercase font-bold tracking-wider">
               Tahun<br class="block md:hidden" /> Pengalaman
             </p>
           </div>
-          <div class="px-1 md:px-0 flex flex-col justify-center items-center">
-            <p
-              class="text-2xl sm:text-3xl md:text-4xl font-serif font-extrabold text-brand-primary dark:text-brand-primaryDark flex items-center justify-center gap-0.5 md:gap-1"
-            >
-              4.9
-              <i class="ph-fill ph-star text-brand-accent text-lg sm:text-2xl"></i>
+
+          <!-- Kolom 3: Rating — bintang sejajar teks dengan items-baseline -->
+          <div class="flex flex-col justify-center items-center px-1 md:px-2">
+            <p class="font-serif font-extrabold text-brand-primary dark:text-brand-primaryDark leading-none flex items-baseline justify-center gap-0.5 md:gap-1">
+              <span class="text-2xl sm:text-3xl md:text-4xl">4.9</span>
+              <i class="ph-fill ph-star text-brand-accent text-base sm:text-xl md:text-2xl"></i>
             </p>
             <p class="text-[9px] sm:text-xs md:text-sm text-gray-500 mt-1 sm:mt-2 uppercase font-bold tracking-wider">
               Rating<br class="block md:hidden" /> Kami
