@@ -7,9 +7,8 @@
         <h2 class="font-serif text-4xl md:text-5xl font-bold text-brand-primary dark:text-white mb-6">
           Kata Mereka
         </h2>
-        <p class="text-gray-600 dark:text-gray-400 text-lg">
-          Merasakan kehangatan tradisi melalui setiap gigitan. Inilah cerita dari
-          keluarga besar penikmat sajian autentik Surabi Lembur.
+        <p class="text-gray-600 dark:text-gray-400 text-lg text-justify">
+          Dalam setiap gigitan, tradisi kembali bernapas. Surabi Lembur menjadi ruang tempat kenangan, kebersamaan, dan cita rasa autentik berpadu, mengikat setiap penikmatnya dalam satu cerita yang tak lekang oleh waktu.
         </p>
 
         <!-- Global Rating Badge — ada di HTML referensi, hilang di Vue sebelumnya -->
@@ -63,9 +62,8 @@
         <h3 class="font-serif text-3xl md:text-4xl font-bold text-brand-primary dark:text-white mb-6">
           Bagikan Pengalaman Anda
         </h3>
-        <p class="text-gray-600 dark:text-gray-300 mb-10 max-w-xl mx-auto text-lg">
-          Komentar dan masukan Anda adalah bumbu rahasia kami untuk terus bertumbuh.
-          Ceritakan momen manis Anda bersama sajian hangat kami.
+        <p class="text-gray-600 dark:text-gray-300 mb-10 max-w-xl mx-auto text-lg text-justify">
+          Setiap kesan yang Anda bagikan adalah jejak yang menguatkan langkah kami. Biarkan cerita Anda menjadi bagian dari perjalanan Surabi Lembur.
         </p>
         <button
           class="bg-brand-primary dark:bg-brand-primaryDark text-white dark:text-brand-dark px-10 py-4 rounded-full font-bold hover:shadow-xl hover:-translate-y-1 transition-all inline-flex items-center gap-2"
@@ -82,22 +80,22 @@
 <script setup>
 const reviews = [
   {
-    quote: 'Rasa autentik yang langsung mengingatkan saya pada masa kecil di kampung halaman. Teksturnya sangat lembut, pinggirannya renyah sempurna, dan topping oncomnya juara. Suasana tempatnya juga sangat hangat.',
-    name: 'Andini Kusuma',
-    role: 'Penikmat Setia',
-    avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150',
+    quote: 'Nggak nyangka seenak ini 😭 Surabinya soft banget, pinggirannya crispy, suka banget sama varian yang oncom. Fix bakal balik lagi sih.',
+    name: 'Kirana Larasati',
+    role: 'Food Enthusiast',
+    avatar: 'https://nzmzljgowwpbnyjqdnvy.supabase.co/storage/v1/object/public/Surabi/IMG_20260628_085134.jpg',
   },
   {
-    quote: 'Presentasi makanannya sangat elegan untuk ukuran jajanan tradisional. Surabi kinca duriannya benar-benar lumer di mulut. Pelayanan sangat ramah, staf selalu memastikan kita nyaman. Pengalaman kuliner yang berkelas.',
-    name: 'Budi Santoso',
-    role: 'Kritikus Makanan Lokal',
-    avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=150',
+    quote: 'First time cobain and honestly worth it sih. Rasa coklatnya juga balance, nggak over manis. Tempatnya juga chill buat nongkrong bentar.',
+    name: 'Raka Permana',
+    role: 'Content Creator',
+    avatar: 'https://nzmzljgowwpbnyjqdnvy.supabase.co/storage/v1/object/public/Surabi/IMG_20260628_085439.jpg',
   },
   {
-    quote: 'Sering mampir ke sini sepulang kerja untuk bersantai. Aroma tungku tanah liat yang khas selalu berhasil meredakan lelah. Packaging take-away nya juga sangat rapi dan eksklusif. Sangat direkomendasikan!',
-    name: 'Siti Aminah',
-    role: 'Pecinta Kuliner Tradisional',
-    avatar: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&q=80&w=150',
+    quote: 'Ini sih hidden gem. Udah beberapa kali order rasanya selalu konsisten. Dateng masih anget juga. Literally comfort food pas lagi capek kerja.',
+    name: 'Sekar Ayu',
+    role: 'Coffee & Food Lover',
+    avatar: 'https://nzmzljgowwpbnyjqdnvy.supabase.co/storage/v1/object/public/Surabi/IMG_20260628_085304.jpg',
   },
 ]
 
