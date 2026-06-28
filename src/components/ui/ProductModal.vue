@@ -11,25 +11,26 @@
 
     <!-- Modal panel -->
     <Transition name="modal-content">
+      <!-- PERUBAHAN: items-end diganti items-center, ditambah p-4 agar tidak mepet tepi layar -->
       <div
         v-if="isOpen && product"
-        class="fixed inset-0 z-[101] flex items-end md:items-center justify-center pointer-events-none"
+        class="fixed inset-0 z-[101] flex items-center justify-center p-4 pointer-events-none"
       >
+        <!-- PERUBAHAN: mx-0 dihapus, rounded-t-3xl diganti jadi rounded-3xl agar lengkung di semua sudut -->
         <div
-          class="relative bg-brand-light dark:bg-brand-surfaceDark w-full max-w-md md:max-w-lg lg:max-w-xl mx-0 md:mx-4 rounded-t-3xl md:rounded-4xl shadow-2xl overflow-hidden max-h-[85vh] md:max-h-[92vh] flex flex-col pointer-events-auto"
+          class="relative bg-brand-light dark:bg-brand-surfaceDark w-full max-w-md md:max-w-lg lg:max-w-xl rounded-3xl md:rounded-4xl shadow-2xl overflow-hidden max-h-[90vh] flex flex-col pointer-events-auto"
         >
           <!-- Product image + action buttons -->
-          <!-- Menggunakan aspect-video agar proporsional dan tidak ter-crop (anti-ngezoom) -->
-          <div class="relative aspect-video md:aspect-auto md:h-72 w-full flex-shrink-0 bg-gray-100 dark:bg-gray-800">
+          <div class="relative h-48 md:h-72 w-full flex-shrink-0 bg-gray-100 dark:bg-gray-800">
             <button
-              class="absolute top-3 left-3 md:top-4 md:left-4 z-10 w-7 h-7 md:w-10 md:h-10 bg-white/80 dark:bg-black/50 backdrop-blur-md rounded-full flex items-center justify-center text-brand-primary dark:text-white hover:scale-110 transition-transform"
+              class="absolute top-3 left-3 md:top-4 md:left-4 z-10 w-8 h-8 md:w-10 md:h-10 bg-white/80 dark:bg-black/50 backdrop-blur-md rounded-full flex items-center justify-center text-brand-primary dark:text-white hover:scale-110 transition-transform"
               aria-label="Tutup"
               @click="$emit('close')"
             >
               <i class="ph ph-arrow-left text-sm md:text-xl"></i>
             </button>
             <button
-              class="absolute top-3 right-3 md:top-4 md:right-4 z-10 w-7 h-7 md:w-10 md:h-10 bg-white/80 dark:bg-black/50 backdrop-blur-md rounded-full flex items-center justify-center text-brand-primary dark:text-white hover:scale-110 transition-transform"
+              class="absolute top-3 right-3 md:top-4 md:right-4 z-10 w-8 h-8 md:w-10 md:h-10 bg-white/80 dark:bg-black/50 backdrop-blur-md rounded-full flex items-center justify-center text-brand-primary dark:text-white hover:scale-110 transition-transform"
               aria-label="Bagikan"
             >
               <i class="ph ph-share-network text-sm md:text-xl"></i>
