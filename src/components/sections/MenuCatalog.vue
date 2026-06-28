@@ -85,7 +85,7 @@ import { useMenu } from '@/composables/useMenu.js'
 
 defineEmits(['open-product'])
 
-const categories = ['Semua', 'Manis', 'Asin']
+const categories = ['Semua', 'Manis', 'Asin', 'Best Seller', 'Special']
 
 const {
   isLoading,
