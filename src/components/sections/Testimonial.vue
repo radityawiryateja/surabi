@@ -80,7 +80,7 @@
 <script setup>
 const reviews = [
   {
-    quote: 'Nggak nyangka seenak ini 😭 Surabinya soft banget, pinggirannya crispy, suka banget sama varian yang oncom. Fix bakal balik lagi sih.',
+    quote: 'Nggak nyangka seenak ini weh. Surabinya soft banget, pinggirannya crispy, suka banget sama varian yang oncom. Fix bakal balik lagi sih.',
     name: 'Kirana Larasati',
     role: 'Food Enthusiast',
     avatar: 'https://nzmzljgowwpbnyjqdnvy.supabase.co/storage/v1/object/public/Surabi/IMG_20260628_085134.jpg',
