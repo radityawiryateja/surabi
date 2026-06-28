@@ -34,7 +34,7 @@
           <footer class="mt-5 md:mt-6 flex items-center gap-3 md:gap-4">
             <div class="w-10 h-10 md:w-12 md:h-12 bg-gray-300 rounded-full overflow-hidden flex-shrink-0">
               <img
-                src="https://nzmzljgowwpbnyjqdnvy.supabase.co/storage/v1/object/public/Surabi/36e66b06358eee8ef3f530ab7c5e431e.jpg"
+                src="https://nzmzljgowwpbnyjqdnvy.supabase.co/storage/v1/object/public/Surabi/9ebb19a4-4abd-4b94-a74a-b89c1a2910de.jpg"
                 alt="Bu Euis"
                 class="w-full h-full object-cover"
               />
