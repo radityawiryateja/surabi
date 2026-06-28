@@ -34,7 +34,7 @@
           <footer class="mt-5 md:mt-6 flex items-center gap-3 md:gap-4">
             <div class="w-10 h-10 md:w-12 md:h-12 bg-gray-300 rounded-full overflow-hidden flex-shrink-0">
               <img
-                src="https://nzmzljgowwpbnyjqdnvy.supabase.co/storage/v1/object/public/Surabi/9ebb19a4-4abd-4b94-a74a-b89c1a2910de.jpg"
+                src="https://nzmzljgowwpbnyjqdnvy.supabase.co/storage/v1/object/public/Surabi/36e66b06358eee8ef3f530ab7c5e431e.jpg"
                 alt="Bu Euis"
                 class="w-full h-full object-cover"
               />
@@ -52,7 +52,7 @@
       <div class="grid grid-cols-1 gap-4 md:gap-6" data-aos="fade-left">
         <div class="relative rounded-3xl md:rounded-4xl overflow-hidden shadow-2xl h-[240px] md:h-[400px]">
           <img
-            src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&q=80&w=800"
+            src="https://nzmzljgowwpbnyjqdnvy.supabase.co/storage/v1/object/public/Surabi/9ebb19a4-4abd-4b94-a74a-b89c1a2910de.jpg"
             alt="Dapur Tradisional"
             class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
           />
