@@ -7,7 +7,7 @@
         <h2 class="font-serif text-4xl md:text-5xl font-bold text-brand-primary dark:text-white mb-6">
           Kata Mereka
         </h2>
-        <p class="text-gray-600 dark:text-gray-400 text-lg text-justify">
+        <p class="text-gray-600 dark:text-gray-400 text-lg text-center">
           Dalam setiap gigitan, tradisi kembali bernapas. Surabi Lembur menjadi ruang tempat kenangan, kebersamaan, dan cita rasa autentik berpadu, mengikat setiap penikmatnya dalam satu cerita yang tak lekang oleh waktu.
         </p>
 
