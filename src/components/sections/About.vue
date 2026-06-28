@@ -18,7 +18,7 @@
           Warisan Rasa dari Hati
         </h2>
 
-        <p class="text-gray-600 dark:text-gray-400 text-sm md:text-lg leading-relaxed">
+        <p class="text-gray-600 dark:text-gray-400 text-sm md:text-lg leading-relaxed text-justify">
           Di tengah laju zaman yang terus bergerak, kami memilih kembali pada akar. Kami menyalakan kembali bara tradisi, merawat resep-resep warisan, lalu mengolahnya dengan sentuhan masa kini tanpa menghilangkan jiwanya. Sejak tahun 2020, Surabi Lembur tumbuh dari kecintaan kami terhadap kekayaan rasa yang dimiliki Nusantara.
         </p>
 
