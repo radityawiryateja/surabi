@@ -92,7 +92,7 @@ const reviews = [
     avatar: 'https://nzmzljgowwpbnyjqdnvy.supabase.co/storage/v1/object/public/Surabi/IMG_20260628_085439.jpg',
   },
   {
-    quote: 'Ini sih hidden gem. Udah beberapa kali order rasanya selalu konsisten. Dateng masih anget juga. Literally comfort food pas lagi capek kerja.',
+    quote: 'Ini sih hidden gem. Udah beberapa kali order rasanya selalu konsisten. Dateng masih anget juga. Literally my comfort food pas lagi capek kerja.',
     name: 'Sekar Ayu',
     role: 'Coffee & Food Lover',
     avatar: 'https://nzmzljgowwpbnyjqdnvy.supabase.co/storage/v1/object/public/Surabi/IMG_20260628_085304.jpg',
