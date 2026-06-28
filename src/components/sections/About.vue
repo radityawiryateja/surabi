@@ -52,7 +52,7 @@
       <div class="grid grid-cols-1 gap-4 md:gap-6" data-aos="fade-left">
         <div class="relative rounded-3xl md:rounded-4xl overflow-hidden shadow-2xl h-[240px] md:h-[400px]">
           <img
-            src="https://nzmzljgowwpbnyjqdnvy.supabase.co/storage/v1/object/public/Surabi/9ebb19a4-4abd-4b94-a74a-b89c1a2910de.jpg"
+            src="https://nzmzljgowwpbnyjqdnvy.supabase.co/storage/v1/object/public/Surabi/e922805c-cacc-4b20-afa7-34e93c7d17ba.jpg"
             alt="Dapur Tradisional"
             class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
           />
