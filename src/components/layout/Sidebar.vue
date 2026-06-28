@@ -73,7 +73,7 @@ const scrollTo = inject('scrollTo')
 
 const navLinks = [
   { id: 'beranda',     label: 'Beranda' },
-  { id: 'kontak',      label: 'Lokasi' },
+  { id: 'lokasi',      label: 'Lokasi' },
   { id: 'menu',        label: 'Menu' },
   { id: 'tentang',     label: 'Tentang Kami' },
   { id: 'testimonial', label: 'Testimonial' },
