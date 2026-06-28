@@ -77,7 +77,7 @@
               1000+
             </p>
             <p class="text-[9px] sm:text-xs md:text-sm text-gray-500 mt-1 sm:mt-2 uppercase font-bold tracking-wider">
-              Pelanggan
+              Pelanggan<br class="block md:hidden" /> Setia
             </p>
           </div>
 
