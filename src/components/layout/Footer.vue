@@ -5,26 +5,26 @@
       <!-- Jarak antar elemen (gap) dan batas bawah (mb) diperkecil untuk HP -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 md:gap-12 mb-10 md:mb-16">
 
-        <!-- Brand + tagline (Dibuat rata tengah di HP) -->
-        <div class="lg:col-span-5 text-center md:text-left flex flex-col items-center md:items-start">
+        <!-- Brand + tagline (Dikembalikan Rata Kiri) -->
+        <div class="lg:col-span-5">
           <a
             href="#beranda"
             class="font-serif font-bold text-xl md:text-2xl text-brand-primary dark:text-brand-primaryDark flex items-center gap-2.5 md:gap-3 mb-4 md:mb-6"
             @click.prevent="scrollTo('beranda')"
           >
-            <div class="w-8 h-8 md:w-10 md:h-10 bg-brand-primary dark:bg-brand-primaryDark text-white dark:text-brand-dark rounded-full flex items-center justify-center">
+            <div class="w-8 h-8 md:w-10 md:h-10 bg-brand-primary dark:bg-brand-primaryDark text-white dark:text-brand-dark rounded-full flex items-center justify-center flex-shrink-0">
               <i class="ph-fill ph-cooking-pot text-lg md:text-xl"></i>
             </div>
             Surabi Lembur
           </a>
-          <p class="text-gray-600 dark:text-gray-400 text-xs md:text-sm leading-relaxed md:pr-4 max-w-sm md:max-w-none">
+          <p class="text-gray-600 dark:text-gray-400 text-xs md:text-sm leading-relaxed pr-2 md:pr-4">
             Sajian Autentik Pedesaan. Menikmati kelezatan murni dari resep tradisional
             dengan suasana hangat yang selalu mengingatkan pada rumah.
           </p>
         </div>
 
-        <!-- Tautan (Dibuat rata tengah di HP) -->
-        <div class="lg:col-span-3 lg:col-start-7 text-center md:text-left mt-2 md:mt-0">
+        <!-- Tautan (Dikembalikan Rata Kiri) -->
+        <div class="lg:col-span-3 lg:col-start-7">
           <h4 class="font-bold text-xs md:text-sm tracking-widest uppercase mb-4 md:mb-6 text-brand-primary dark:text-white">
             Tautan
           </h4>
@@ -42,7 +42,7 @@
         </div>
 
         <!-- Jam Operasional -->
-        <div class="lg:col-span-3 text-center md:text-left mt-2 md:mt-0">
+        <div class="lg:col-span-3">
           <h4 class="font-bold text-xs md:text-sm tracking-widest uppercase mb-4 md:mb-6 text-brand-primary dark:text-white">
             Operasional
           </h4>
@@ -50,7 +50,7 @@
             <li
               v-for="jam in jamOperasional"
               :key="jam.label"
-              class="flex justify-between items-center border-b border-gray-200/50 dark:border-gray-800 md:border-none pb-2 md:pb-0"
+              class="flex justify-between items-center"
             >
               <span>{{ jam.label }}</span>
               <span class="bg-[#EBE4D8] dark:bg-black/30 px-2.5 py-1 md:px-3 md:py-1 rounded-full text-[10px] md:text-xs font-bold text-brand-primary dark:text-brand-primaryDark">
@@ -76,7 +76,7 @@ const scrollTo = inject('scrollTo')
 
 const footerLinks = [
   { id: 'beranda',     label: 'Beranda' },
-  { id: 'lokasi',      label: 'Lokasi' }, // ID sudah saya ganti agar pas dengan section Maps
+  { id: 'lokasi',      label: 'Lokasi' },
   { id: 'menu',        label: 'Menu' },
   { id: 'tentang',     label: 'Tentang Kami' },
   { id: 'testimonial', label: 'Testimonial' },
