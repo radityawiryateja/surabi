@@ -63,8 +63,8 @@ const props = defineProps({
 })
 const emit = defineEmits(['close'])
 
-const WA_NUMBER  = '6281234567890'
-const EMAIL_TUJUAN = 'halo@surabilembur.com'
+const WA_NUMBER  = '6288971885966'
+const EMAIL_TUJUAN = 'surabilembur@gmail.com'
 
 function sendViaWA() {
   const { nama = '', pesan = '', email = '' } = props.formData
