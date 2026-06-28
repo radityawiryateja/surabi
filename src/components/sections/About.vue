@@ -41,11 +41,11 @@
                 class="w-full h-full object-cover"
               />
             </div>
-            <div>
-              <strong class="block text-brand-primary dark:text-brand-primaryDark font-bold text-sm md:text-base">
+            <div class="flex flex-col">
+              <strong class="text-brand-primary dark:text-brand-primaryDark font-bold text-sm md:text-base leading-none mb-0.5">
                 Bu Euis
               </strong>
-              <span class="text-[10px] md:text-sm text-gray-500">Pendiri Surabi Lembur</span>
+              <span class="text-[10px] md:text-sm text-gray-500 leading-tight">Pendiri Surabi Lembur</span>
             </div>
           </footer>
         </blockquote>
