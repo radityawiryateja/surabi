@@ -69,7 +69,7 @@ const EMAIL_TUJUAN = 'surabilembur@gmail.com'
 function sendViaWA() {
   const { nama = '', pesan = ''} = props.formData
   const text = encodeURIComponent(
-    `Halo Surabi Lembur, saya ${nama}.\n\n${pesan}\n\nEmail kontak: ${email}`
+    `Halo Surabi Lembur, saya ${nama}.\n\n${pesan}`
   )
   window.open(`https://wa.me/${WA_NUMBER}?text=${text}`, '_blank')
   emit('close')
