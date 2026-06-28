@@ -1,11 +1,11 @@
 <template>
   <section
     id="beranda"
-    class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24 flex flex-col lg:flex-row items-center gap-10 md:gap-12 overflow-hidden"
+    class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-24 flex flex-col lg:flex-row items-center gap-8 md:gap-12 overflow-hidden"
   >
     <!-- Text Column -->
     <div
-      class="flex-1 space-y-6 md:space-y-8 text-center lg:text-left z-10"
+      class="flex-1 space-y-5 md:space-y-8 text-center lg:text-left z-10"
       data-aos="fade-right"
       data-aos-duration="1000"
     >
@@ -16,7 +16,7 @@
       </span>
 
       <h1
-        class="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-brand-primary dark:text-white"
+        class="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-brand-primary dark:text-white"
       >
         Surabi Tradisional dengan Cita Rasa Modern
       </h1>
@@ -34,14 +34,14 @@
       >
         <a
           href="#menu"
-          class="w-full sm:w-auto text-center bg-brand-primary dark:bg-brand-primaryDark text-white dark:text-brand-dark px-8 py-3 md:px-10 md:py-4 rounded-full font-bold hover:shadow-xl hover:-translate-y-1 transition-all text-sm md:text-base"
+          class="w-full sm:w-auto text-center bg-brand-primary dark:bg-brand-primaryDark text-white dark:text-brand-dark px-6 py-3 md:px-10 md:py-4 rounded-full font-bold hover:shadow-xl hover:-translate-y-1 transition-all text-sm md:text-base"
           @click.prevent="scrollTo('menu')"
         >
           PESAN MENU
         </a>
         <a
           href="#tentang"
-          class="w-full sm:w-auto text-center border-2 border-brand-primary dark:border-brand-primaryDark text-brand-primary dark:text-brand-primaryDark px-8 py-3 md:px-10 md:py-4 rounded-full font-bold hover:bg-brand-primary hover:text-white dark:hover:bg-brand-primaryDark dark:hover:text-brand-dark transition-all text-sm md:text-base"
+          class="w-full sm:w-auto text-center border-2 border-brand-primary dark:border-brand-primaryDark text-brand-primary dark:text-brand-primaryDark px-6 py-3 md:px-10 md:py-4 rounded-full font-bold hover:bg-brand-primary hover:text-white dark:hover:bg-brand-primaryDark dark:hover:text-brand-dark transition-all text-sm md:text-base"
           @click.prevent="scrollTo('tentang')"
         >
           TENTANG KAMI
@@ -51,7 +51,7 @@
 
     <!-- Image Column -->
     <div
-      class="flex-1 w-full relative"
+      class="flex-1 w-full relative mt-4 md:mt-0"
       data-aos="zoom-in"
       data-aos-duration="1200"
       data-aos-delay="200"
@@ -59,8 +59,9 @@
       <div
         class="absolute -inset-2 md:-inset-4 bg-brand-primary/5 dark:bg-brand-primaryDark/5 rounded-[2rem] md:rounded-[3rem] transform rotate-3"
       ></div>
+      <!-- Rasio gambar di HP diubah menjadi aspect-[4/3] agar lebih pendek dan manis -->
       <div
-        class="relative w-full aspect-[4/5] md:aspect-square rounded-3xl md:rounded-4xl overflow-hidden shadow-2xl"
+        class="relative w-full aspect-[4/3] md:aspect-square rounded-3xl md:rounded-4xl overflow-hidden shadow-2xl"
       >
         <img
           src="https://images.unsplash.com/photo-1598214886806-c87b84b7078b?auto=format&fit=crop&q=80&w=1000"
