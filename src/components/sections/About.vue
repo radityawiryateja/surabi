@@ -20,10 +20,7 @@
         </h2>
 
         <p class="text-gray-600 dark:text-gray-400 text-sm md:text-lg leading-relaxed">
-          Perjalanan kami dimulai dari sebuah keinginan sederhana: menghadirkan kembali
-          kehangatan tradisi dalam setiap gigitan, menyatukan resep warisan dengan
-          sentuhan modern. Berdiri sejak tahun 2020, Surabi Lembur lahir dari kecintaan
-          kami pada kuliner Nusantara.
+          Di tengah laju zaman yang terus bergerak, kami memilih kembali pada akar. Kami menyalakan kembali bara tradisi, merawat resep-resep warisan, lalu mengolahnya dengan sentuhan masa kini tanpa menghilangkan jiwanya. Sejak tahun 2020, Surabi Lembur tumbuh dari kecintaan kami terhadap kekayaan rasa yang dimiliki Nusantara.
         </p>
 
         <!-- Blockquote -->
@@ -36,13 +33,12 @@
           <p
             class="italic font-serif text-base md:text-xl text-brand-primary dark:text-gray-200 relative z-10 leading-relaxed pt-2"
           >
-            "Surabi bukan sekadar makanan, ini adalah medium yang menyatukan generasi,
-            mengikat kenangan masa kecil dengan cita rasa masa kini."
+            "Surabi bukan hanya tentang rasa, melainkan tentang kenangan yang tak pernah benar-benar usai. Di setiap gigitannya, tersimpan jejak masa kecil, kehangatan keluarga, dan cerita yang terus diwariskan dari satu generasi ke generasi berikutnya."
           </p>
           <footer class="mt-4 md:mt-6 flex items-center gap-3 md:gap-4">
             <div class="w-10 h-10 md:w-12 md:h-12 bg-gray-300 rounded-full overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200"
+                src="https://nzmzljgowwpbnyjqdnvy.supabase.co/storage/v1/object/public/Surabi/36e66b06358eee8ef3f530ab7c5e431e.jpg"
                 alt="Bu Euis"
                 class="w-full h-full object-cover"
               />
@@ -84,7 +80,7 @@
           <!-- Kolom 2: Tahun Pengalaman -->
           <div class="flex flex-col justify-center items-center border-x border-gray-300 dark:border-gray-700 px-1 md:px-2">
             <p class="text-2xl sm:text-3xl md:text-4xl font-serif font-extrabold text-brand-primary dark:text-brand-primaryDark leading-none">
-              4
+              5
             </p>
             <p class="text-[9px] sm:text-xs md:text-sm text-gray-500 mt-1 sm:mt-2 uppercase font-bold tracking-wider">
               Tahun<br class="block md:hidden" /> Pengalaman
