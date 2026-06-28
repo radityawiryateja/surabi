@@ -109,18 +109,6 @@
               </div>
               <div>
                 <label class="block text-xs md:text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5 md:mb-2 tracking-wide">
-                  Alamat Email
-                </label>
-                <input
-                  v-model="form.email"
-                  type="email"
-                  required
-                  placeholder="nama@email.com"
-                  class="w-full px-4 py-3 md:px-5 md:py-4 text-sm md:text-base rounded-xl md:rounded-2xl border-0 ring-1 ring-gray-300 dark:ring-gray-700 bg-white dark:bg-[#1A1614] dark:text-white focus:outline-none focus:ring-2 focus:ring-brand-primary transition-shadow"
-                />
-              </div>
-              <div>
-                <label class="block text-xs md:text-sm font-bold text-gray-700 dark:text-gray-300 mb-1.5 md:mb-2 tracking-wide">
                   Pesan Anda
                 </label>
                 <textarea
@@ -219,8 +207,8 @@ function toggleFaq(index) {
 }
 
 const contactChannels = [
-  { label: 'WhatsApp', value: '+62 812 3456 7890',    icon: 'ph-fill ph-whatsapp-logo' },
-  { label: 'Email',    value: 'surabilembur@mail.com', icon: 'ph-fill ph-envelope-simple' },
+  { label: 'WhatsApp', value: '+62 889 7188 5966',    icon: 'ph-fill ph-whatsapp-logo' },
+  { label: 'Email',    value: 'surabilembur@gmail.com', icon: 'ph-fill ph-envelope-simple' },
 ]
 
 const socials = [
