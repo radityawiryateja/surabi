@@ -100,6 +100,6 @@ const reviews = [
 ]
 
 function openWhatsApp() {
-  window.open('https://wa.me/6281234567890?text=Halo%20Surabi%20Lembur!%20Saya%20ingin%20berbagi%20ulasan.', '_blank')
+  window.open('https://wa.me/6288971885966?text=Halo%20Surabi%20Lembur!%20Saya%20ingin%20berbagi%20ulasan.', '_blank')
 }
 </script>
