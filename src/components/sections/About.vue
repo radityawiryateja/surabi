@@ -76,7 +76,7 @@
               1000+
             </p>
             <p class="text-[9px] sm:text-xs md:text-sm text-gray-500 mt-1 sm:mt-2 uppercase font-bold tracking-wider">
-              Pelanggan<br class="block md:hidden" /> Setia
+              Pelanggan
             </p>
           </div>
           <div
@@ -94,7 +94,7 @@
               class="text-2xl sm:text-3xl md:text-4xl font-serif font-extrabold text-brand-primary dark:text-brand-primaryDark flex items-center justify-center gap-0.5 md:gap-1"
             >
               4.9
-              <i class="ph-fill ph-star text-brand-accent text-lg sm:text-2xl translate-y-1"></i>
+              <i class="ph-fill ph-star text-brand-accent text-lg sm:text-2xl"></i>
             </p>
             <p class="text-[9px] sm:text-xs md:text-sm text-gray-500 mt-1 sm:mt-2 uppercase font-bold tracking-wider">
               Rating<br class="block md:hidden" /> Kami

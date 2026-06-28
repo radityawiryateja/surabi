@@ -2,11 +2,21 @@
 import { ref, computed } from 'vue'
 import { createClient } from '@supabase/supabase-js'
 
-const SUPABASE_URL = 'https://nzmzljgowwpbnyjqdnvy.supabase.co'
-const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im56bXpsamdvd3dwYm55anFkbnZ5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODI1NDU5NTcsImV4cCI6MjA5ODEyMTk1N30.3RnzfaqDTw2bvo2h1AEb6ee6zPEokTBUtvnJ9LHFTaM'
+// ============================================================
+// >>> GANTI DENGAN URL DAN ANON KEY SUPABASE KAMU <<<
+// Jika belum dikonfigurasi, aplikasi otomatis pakai dummyData.
+// ============================================================
+const SUPABASE_URL = 'https://XYZ.supabase.co'
+const SUPABASE_KEY = 'YOUR_SUPABASE_ANON_KEY'
 
-// Langsung eksekusi createClient, tidak usah pakai if-else lagi
-const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
+const isSupabaseConfigured =
+  SUPABASE_URL !== 'https://XYZ.supabase.co' &&
+  SUPABASE_KEY !== 'YOUR_SUPABASE_ANON_KEY'
+
+let supabase = null
+if (isSupabaseConfigured) {
+  supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
+}
 
 // ── Data dummy untuk fallback / development ──────────────────
 const DUMMY_MENU = [
@@ -82,12 +92,6 @@ export function useMenu() {
   // Filtered by category
   const filteredMenu = computed(() => {
     if (activeFilter.value === 'Semua') return allMenu.value
-    if (activeFilter.value === 'Best Seller') {
-      return allMenu.value.filter((item) => item.badge === 'Best Seller')
-    }
-    if (activeFilter.value === 'Special') {
-      return allMenu.value.filter((item) => item.badge === 'Special')
-    }
     return allMenu.value.filter((item) => item.kategori === activeFilter.value)
   })
 

@@ -16,16 +16,22 @@
         class="fixed inset-0 z-[101] flex items-end md:items-center justify-center pointer-events-none"
       >
         <div
-          class="relative bg-brand-light dark:bg-brand-surfaceDark w-full max-w-md md:max-w-lg lg:max-w-xl mx-4 rounded-3xl md:rounded-4xl shadow-2xl overflow-hidden max-h-[90vh] flex flex-col pointer-events-auto"
+          class="relative bg-brand-light dark:bg-brand-surfaceDark w-full max-w-md md:max-w-lg lg:max-w-xl mx-0 md:mx-4 rounded-t-4xl md:rounded-4xl shadow-2xl overflow-hidden max-h-[92vh] flex flex-col pointer-events-auto"
         >
-          <!-- Product image + close -->
-          <div class="relative h-56 md:h-72 w-full flex-shrink-0">
+          <!-- Product image + action buttons -->
+          <div class="relative h-64 md:h-72 w-full flex-shrink-0">
             <button
               class="absolute top-4 left-4 z-10 w-10 h-10 bg-white/80 dark:bg-black/50 backdrop-blur-md rounded-full flex items-center justify-center text-brand-primary dark:text-white hover:scale-110 transition-transform"
               aria-label="Tutup"
               @click="$emit('close')"
             >
               <i class="ph ph-arrow-left text-xl"></i>
+            </button>
+            <button
+              class="absolute top-4 right-4 z-10 w-10 h-10 bg-white/80 dark:bg-black/50 backdrop-blur-md rounded-full flex items-center justify-center text-brand-primary dark:text-white hover:scale-110 transition-transform"
+              aria-label="Bagikan"
+            >
+              <i class="ph ph-share-network text-xl"></i>
             </button>
             <img
               :src="product.foto_produk"
@@ -34,64 +40,62 @@
             />
           </div>
 
-          <!-- Scrollable body -->
-          <div class="p-5 md:p-8 overflow-y-auto hide-scroll flex-grow">
-            <!-- Title row -->
+          <!-- Scrollable body — scrollbar visible di sini -->
+          <div class="p-6 md:p-8 overflow-y-auto flex-grow modal-scroll">
+            <!-- Title + badge -->
             <div class="flex justify-between items-start mb-2">
-              <h3
-                class="font-serif text-2xl md:text-3xl font-bold text-brand-primary dark:text-white"
-              >
+              <h3 class="font-serif text-2xl md:text-3xl font-bold text-brand-primary dark:text-white">
                 {{ product.nama_produk }}
               </h3>
               <span
                 v-if="product.badge"
-                class="bg-brand-surface dark:bg-yellow-900/40 text-brand-accent text-[10px] md:text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1 ml-3 flex-shrink-0"
+                class="bg-brand-surface dark:bg-yellow-900/40 text-brand-accent text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1 ml-3 flex-shrink-0"
               >
                 {{ product.badge }}
               </span>
             </div>
 
             <!-- Rating -->
-            <div class="flex items-center gap-2 mb-3 md:mb-4 text-xs md:text-sm">
-              <i class="ph-fill ph-star text-brand-accent text-base md:text-lg"></i>
+            <div class="flex items-center gap-2 mb-4 text-sm">
+              <i class="ph-fill ph-star text-brand-accent text-lg"></i>
               <span class="font-bold dark:text-gray-200">{{ product.rating || '4.9' }}</span>
+              <span class="text-gray-500 dark:text-gray-400">({{ product.ulasan || '120' }}+ ulasan)</span>
             </div>
 
             <!-- Price -->
-            <p
-              class="font-serif font-bold text-xl md:text-2xl text-brand-primary dark:text-brand-primaryDark mb-4"
-            >
+            <p class="font-serif font-bold text-2xl text-brand-primary dark:text-brand-primaryDark mb-4">
               {{ formatHarga(product.harga) }}
             </p>
 
             <!-- Description -->
-            <p class="text-sm md:text-base text-gray-600 dark:text-gray-300 leading-relaxed mb-6 md:mb-8">
+            <p class="text-sm md:text-base text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
               {{ product.deskripsi }}
             </p>
 
             <!-- Toppings -->
-            <h4 class="font-bold text-brand-primary dark:text-white mb-4 text-sm md:text-base">
+            <h4 class="font-bold text-brand-primary dark:text-white mb-4">
               Tambahan Topping
             </h4>
-            <div class="space-y-3 mb-6 md:mb-8">
-              <div
+            <div class="space-y-3 mb-8">
+              <label
                 v-for="topping in toppings"
                 :key="topping.name"
-                class="flex items-center justify-between p-3 md:p-4 border border-gray-200 dark:border-gray-700 rounded-xl md:rounded-2xl"
+                class="flex items-center justify-between p-4 border border-gray-200 dark:border-gray-700 rounded-2xl cursor-pointer hover:border-brand-primary dark:hover:border-brand-primaryDark transition-colors"
               >
-                <span class="text-xs md:text-sm font-medium dark:text-gray-200">
-                  {{ topping.name }}
-                </span>
-                <span class="text-xs md:text-sm text-gray-500">{{ topping.price }}</span>
-              </div>
+                <div class="flex items-center gap-3">
+                  <input type="checkbox" class="w-5 h-5 accent-brand-primary rounded" />
+                  <span class="text-sm font-medium dark:text-gray-200">{{ topping.name }}</span>
+                </div>
+                <span class="text-sm text-gray-500">{{ topping.price }}</span>
+              </label>
             </div>
 
             <!-- CTA -->
             <button
-              class="w-full bg-brand-primary dark:bg-brand-primaryDark text-white dark:text-brand-dark py-3 md:py-4 rounded-full font-bold hover:opacity-90 transition-opacity flex items-center justify-center gap-2 shadow-xl shadow-brand-primary/20 text-sm md:text-base"
+              class="w-full bg-brand-primary dark:bg-brand-primaryDark text-white dark:text-brand-dark py-4 rounded-full font-bold hover:opacity-90 transition-opacity flex items-center justify-center gap-2 shadow-xl shadow-brand-primary/20"
               @click="orderViaWA"
             >
-              <i class="ph ph-whatsapp-logo text-lg md:text-xl"></i>
+              <i class="ph ph-whatsapp-logo text-xl"></i>
               PESAN VIA WHATSAPP
             </button>
           </div>
@@ -113,7 +117,8 @@ defineEmits(['close'])
 const { formatHarga } = useMenu()
 
 const toppings = [
-  { name: 'Keju Parut',       price: '+Rp 3.000' },
+  { name: 'Keju Parut',        price: '+Rp 3.000' },
+  { name: 'Kacang Sangrai',    price: '+Rp 2.000' },
   { name: 'Susu Kental Manis', price: '+Rp 1.000' },
 ]
 
@@ -125,3 +130,20 @@ function orderViaWA() {
   window.open(`https://wa.me/6281234567890?text=${text}`, '_blank')
 }
 </script>
+
+<style scoped>
+/* Scrollbar tipis tapi tetap terlihat di dalam modal */
+.modal-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+.modal-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.modal-scroll::-webkit-scrollbar-thumb {
+  background: #d4d4d8;
+  border-radius: 4px;
+}
+.dark .modal-scroll::-webkit-scrollbar-thumb {
+  background: #52525b;
+}
+</style>
