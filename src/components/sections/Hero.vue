@@ -24,9 +24,7 @@
       <p
         class="text-gray-600 dark:text-gray-400 text-sm md:text-base lg:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed"
       >
-        Nikmati perpaduan sempurna resep warisan keluarga dan topping kekinian. Dibuat
-        segar menggunakan tungku tanah liat untuk menjaga aroma dan rasa
-        autentik yang selalu dirindukan.
+        "Setiap surabi adalah kisah yang dipanggang oleh waktu. Berasal dari resep warisan keluarga, lalu disempurnakan dengan sentuhan masa kini, menghadirkan aroma dan cita rasa autentik yang selalu menemukan jalan pulang ke hati."
       </p>
 
       <div
