@@ -62,7 +62,7 @@
         class="relative w-full aspect-[4/3] md:aspect-square rounded-3xl md:rounded-4xl overflow-hidden shadow-2xl"
       >
         <img
-          src="https://images.unsplash.com/photo-1598214886806-c87b84b7078b?auto=format&fit=crop&q=80&w=1000"
+          src="https://nzmzljgowwpbnyjqdnvy.supabase.co/storage/v1/object/public/Surabi/Gemini_Generated_Image_s3mg0zs3mg0zs3mg.png"
           alt="Surabi Hangat"
           class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
         />
