@@ -30,9 +30,7 @@
           <i
             class="ph-fill ph-quotes text-3xl md:text-5xl text-brand-primary/10 dark:text-brand-primaryDark/10 absolute top-4 left-4 md:top-6 md:left-6"
           ></i>
-          <p
-            class="italic font-serif text-base md:text-xl text-brand-primary dark:text-gray-200 relative z-10 leading-relaxed pt-2"
-          >
+          <p class="italic font-serif text-base md:text-xl text-brand-primary dark:text-gray-200 relative z-10 leading-relaxed pt-2 text-justify">
             "Surabi bukan hanya tentang rasa, melainkan tentang kenangan yang tak pernah benar-benar usai. Di setiap gigitannya, tersimpan jejak masa kecil, kehangatan keluarga, dan cerita yang terus diwariskan dari satu generasi ke generasi berikutnya."
           </p>
           <footer class="mt-4 md:mt-6 flex items-center gap-3 md:gap-4">
