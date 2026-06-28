@@ -2,7 +2,6 @@
   <section id="menu" class="bg-brand-surface dark:bg-brand-surfaceDark py-10 md:py-20 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-      <!-- Heading -->
       <div class="text-center mb-8 md:mb-12" data-aos="fade-up">
         <h2
           class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-brand-primary dark:text-white mb-3 md:mb-4"
@@ -15,7 +14,6 @@
         </p>
       </div>
 
-      <!-- Filter Tabs -->
       <div
         class="flex justify-start sm:justify-center gap-2 md:gap-3 mb-8 md:mb-10 overflow-x-auto hide-scroll pb-2"
         data-aos="fade-up"
@@ -36,26 +34,24 @@
         </button>
       </div>
 
-      <!-- Loading skeleton -->
-      <div v-if="isLoading" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+      <div v-if="isLoading" class="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-8">
         <div
           v-for="n in 4"
           :key="n"
-          class="rounded-3xl md:rounded-4xl overflow-hidden bg-brand-light dark:bg-brand-dark animate-pulse"
+          class="rounded-2xl md:rounded-4xl overflow-hidden bg-brand-light dark:bg-brand-dark animate-pulse"
         >
           <div class="aspect-[4/3] bg-gray-200 dark:bg-gray-700"></div>
-          <div class="p-5 md:p-6 space-y-3">
-            <div class="h-5 md:h-6 bg-gray-200 dark:bg-gray-700 rounded-full w-3/4"></div>
-            <div class="h-4 bg-gray-200 dark:bg-gray-700 rounded-full w-full"></div>
-            <div class="h-4 bg-gray-200 dark:bg-gray-700 rounded-full w-1/2"></div>
+          <div class="p-3 md:p-6 space-y-2 md:space-y-3">
+            <div class="h-3 md:h-6 bg-gray-200 dark:bg-gray-700 rounded-full w-3/4"></div>
+            <div class="h-2.5 md:h-4 bg-gray-200 dark:bg-gray-700 rounded-full w-full"></div>
+            <div class="h-2.5 md:h-4 bg-gray-200 dark:bg-gray-700 rounded-full w-1/2"></div>
           </div>
         </div>
       </div>
 
-      <!-- Menu grid -->
       <div
         v-else
-        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8"
+        class="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-8"
       >
         <MenuCard
           v-for="item in visibleMenu"
@@ -66,10 +62,9 @@
         />
       </div>
 
-      <!-- Load More -->
       <div v-if="hasMore && !isLoading" class="text-center mt-8 md:mt-12" data-aos="fade-up">
         <button
-          class="border-2 border-brand-primary dark:border-brand-primaryDark text-brand-primary dark:text-brand-primaryDark px-8 py-2.5 md:px-10 md:py-3 rounded-full text-sm md:text-base font-bold hover:bg-brand-primary hover:text-white dark:hover:bg-brand-primaryDark dark:hover:text-brand-dark transition-all"
+          class="border-2 border-brand-primary dark:border-brand-primaryDark text-brand-primary dark:text-brand-primaryDark px-8 py-2.5 md:px-10 md:py-3 rounded-full text-xs md:text-base font-bold hover:bg-brand-primary hover:text-white dark:hover:bg-brand-primaryDark dark:hover:text-brand-dark transition-all"
           @click="loadMore"
         >
           Lihat Selengkapnya
@@ -114,32 +109,32 @@ const MenuCard = defineComponent({
         'div',
         {
           class:
-            'group cursor-pointer bg-brand-light dark:bg-brand-dark rounded-3xl md:rounded-4xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 md:hover:-translate-y-2 transition-all duration-300 flex flex-col',
+            'group cursor-pointer bg-brand-light dark:bg-brand-dark rounded-2xl md:rounded-4xl overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 md:hover:-translate-y-2 transition-all duration-300 flex flex-col',
           'data-aos': 'fade-up',
           onClick: () => emit('click', item),
         },
         [
           // Image wrapper
-          h('div', { class: 'relative aspect-[4/3] overflow-hidden' }, [
-            // Rating badge
+          h('div', { class: 'relative aspect-[4/3] overflow-hidden flex-shrink-0' }, [
+            // Rating badge (Dikecilkan untuk 2 kolom HP)
             h(
               'span',
               {
                 class:
-                  'absolute top-3 left-3 md:top-4 md:left-4 bg-white/90 dark:bg-black/80 backdrop-blur-md text-xs md:text-sm font-bold px-2.5 py-1 md:px-3 md:py-1.5 rounded-full flex items-center gap-1 z-10 text-brand-primary dark:text-white shadow-sm',
+                  'absolute top-2 left-2 md:top-4 md:left-4 bg-white/90 dark:bg-black/80 backdrop-blur-md text-[9px] md:text-sm font-bold px-1.5 py-0.5 md:px-3 md:py-1.5 rounded-full flex items-center gap-1 z-10 text-brand-primary dark:text-white shadow-sm',
               },
               [
                 h('i', { class: 'ph-fill ph-star text-brand-accent' }),
                 ` ${item.rating || '4.9'}`,
               ]
             ),
-            // Badge (Best Seller / Special)
+            // Badge Best Seller (Dikecilkan untuk 2 kolom HP)
             item.badge
               ? h(
                   'span',
                   {
                     class:
-                      'absolute top-3 right-3 md:top-4 md:right-4 bg-brand-accent text-brand-primary text-xs md:text-sm font-bold px-2.5 py-1 md:px-3 md:py-1.5 rounded-full z-10 shadow-sm',
+                      'absolute top-2 right-2 md:top-4 md:right-4 bg-brand-accent text-brand-primary text-[9px] md:text-sm font-bold px-1.5 py-0.5 md:px-3 md:py-1.5 rounded-full z-10 shadow-sm',
                   },
                   item.badge
                 )
@@ -153,13 +148,13 @@ const MenuCard = defineComponent({
               loading: 'lazy',
             }),
           ]),
-          // Card body
-          h('div', { class: 'p-5 md:p-6 flex flex-col flex-grow' }, [
+          // Card body (Padding dan Teks disesuaikan untuk ruang sempit 2 kolom)
+          h('div', { class: 'p-3 md:p-6 flex flex-col flex-grow' }, [
             h(
               'h3',
               {
                 class:
-                  'font-serif font-bold text-lg md:text-xl mb-1.5 md:mb-2 text-brand-primary dark:text-white group-hover:text-brand-accent transition-colors',
+                  'font-serif font-bold text-sm md:text-xl mb-1 md:mb-2 text-brand-primary dark:text-white group-hover:text-brand-accent transition-colors',
               },
               item.nama_produk
             ),
@@ -167,13 +162,13 @@ const MenuCard = defineComponent({
               'p',
               {
                 class:
-                  'text-sm md:text-base text-gray-500 dark:text-gray-400 mb-3 md:mb-4 line-clamp-2 leading-relaxed flex-grow',
+                  'text-[10px] md:text-sm text-gray-500 dark:text-gray-400 mb-2 md:mb-4 line-clamp-2 leading-relaxed flex-grow',
               },
               item.deskripsi
             ),
             h(
               'p',
-              { class: 'font-bold text-brand-primary dark:text-brand-primaryDark text-lg md:text-xl' },
+              { class: 'font-bold text-brand-primary dark:text-brand-primaryDark text-sm md:text-xl' },
               formatHarga(item.harga)
             ),
           ]),
