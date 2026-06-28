@@ -59,34 +59,40 @@
         </div>
 
         <div
-          class="grid grid-cols-3 text-center bg-brand-surface dark:bg-brand-surfaceDark py-4 px-2 sm:p-6 md:p-8 rounded-3xl md:rounded-4xl shadow-sm mt-2 divide-x divide-gray-300 dark:divide-gray-700"
+          class="grid grid-cols-3 bg-brand-surface dark:bg-brand-surfaceDark py-4 px-2 sm:p-6 md:p-8 rounded-3xl md:rounded-4xl shadow-sm mt-2 divide-x divide-gray-300 dark:divide-gray-700"
         >
-          <div class="flex flex-col justify-center items-center px-1">
-            <p class="text-2xl md:text-4xl font-serif font-extrabold text-brand-primary dark:text-brand-primaryDark leading-none">
-              1000+
-            </p>
-            <p class="text-[10px] md:text-sm text-gray-500 mt-2 uppercase font-bold tracking-wider leading-tight">
+          <div class="flex flex-col items-center px-1">
+            <div class="h-8 md:h-10 flex items-center justify-center">
+              <span class="text-2xl md:text-4xl font-serif font-extrabold text-brand-primary dark:text-brand-primaryDark leading-none">
+                1000+
+              </span>
+            </div>
+            <span class="text-[10px] md:text-sm text-gray-500 mt-1 md:mt-2 uppercase font-bold tracking-wider leading-tight text-center">
               Pelanggan<br />Setia
-            </p>
+            </span>
           </div>
 
-          <div class="flex flex-col justify-center items-center px-1">
-            <p class="text-2xl md:text-4xl font-serif font-extrabold text-brand-primary dark:text-brand-primaryDark leading-none">
-              5
-            </p>
-            <p class="text-[10px] md:text-sm text-gray-500 mt-2 uppercase font-bold tracking-wider leading-tight">
+          <div class="flex flex-col items-center px-1">
+            <div class="h-8 md:h-10 flex items-center justify-center">
+              <span class="text-2xl md:text-4xl font-serif font-extrabold text-brand-primary dark:text-brand-primaryDark leading-none">
+                5
+              </span>
+            </div>
+            <span class="text-[10px] md:text-sm text-gray-500 mt-1 md:mt-2 uppercase font-bold tracking-wider leading-tight text-center">
               Tahun<br />Pengalaman
-            </p>
+            </span>
           </div>
 
-          <div class="flex flex-col justify-center items-center px-1">
-            <p class="font-serif font-extrabold text-brand-primary dark:text-brand-primaryDark leading-none flex items-center justify-center gap-1">
-              <span class="text-2xl md:text-4xl">4.9</span>
+          <div class="flex flex-col items-center px-1">
+            <div class="h-8 md:h-10 flex items-center justify-center gap-1">
+              <span class="text-2xl md:text-4xl font-serif font-extrabold text-brand-primary dark:text-brand-primaryDark leading-none">
+                4.9
+              </span>
               <i class="ph-fill ph-star text-brand-accent text-lg md:text-2xl"></i>
-            </p>
-            <p class="text-[10px] md:text-sm text-gray-500 mt-2 uppercase font-bold tracking-wider leading-tight">
+            </div>
+            <span class="text-[10px] md:text-sm text-gray-500 mt-1 md:mt-2 uppercase font-bold tracking-wider leading-tight text-center">
               Rating<br />Kami
-            </p>
+            </span>
           </div>
         </div>
       </div>
