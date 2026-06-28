@@ -126,7 +126,7 @@ function orderViaWA() {
   const text = encodeURIComponent(
     `Halo Surabi Lembur, saya ingin memesan *${props.product.nama_produk}* (${formatHarga(props.product.harga)}). Terima kasih!`
   )
-  window.open(`https://wa.me/6281234567890?text=${text}`, '_blank')
+  window.open(`https://wa.me/6288971885966?text=${text}`, '_blank')
 }
 </script>
 
