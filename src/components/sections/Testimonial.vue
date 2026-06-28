@@ -37,7 +37,7 @@
           <div class="flex text-brand-accent mb-6 text-sm gap-1">
             <i v-for="s in 5" :key="s" class="ph-fill ph-star"></i>
           </div>
-          <p class="italic text-gray-600 dark:text-gray-300 mb-10 leading-relaxed flex-grow">
+          <p class="italic text-gray-600 dark:text-gray-300 mb-10 leading-relaxed flex-grow text-justify">
             "{{ review.quote }}"
           </p>
           <div class="flex items-center gap-4 border-t border-gray-100 dark:border-gray-800 pt-6">
