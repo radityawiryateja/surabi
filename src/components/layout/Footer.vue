@@ -1,33 +1,34 @@
 <template>
-  <footer class="bg-brand-surface dark:bg-brand-surfaceDark pt-20 pb-8 mt-10">
+  <footer class="bg-brand-surface dark:bg-brand-surfaceDark pt-12 md:pt-20 pb-6 md:pb-8 mt-8 md:mt-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 mb-16">
+      <!-- Jarak antar elemen (gap) dan batas bawah (mb) diperkecil untuk HP -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 md:gap-12 mb-10 md:mb-16">
 
-        <!-- Brand + tagline -->
-        <div class="lg:col-span-5">
+        <!-- Brand + tagline (Dibuat rata tengah di HP) -->
+        <div class="lg:col-span-5 text-center md:text-left flex flex-col items-center md:items-start">
           <a
             href="#beranda"
-            class="font-serif font-bold text-2xl text-brand-primary dark:text-brand-primaryDark flex items-center gap-3 mb-6"
+            class="font-serif font-bold text-xl md:text-2xl text-brand-primary dark:text-brand-primaryDark flex items-center gap-2.5 md:gap-3 mb-4 md:mb-6"
             @click.prevent="scrollTo('beranda')"
           >
-            <div class="w-10 h-10 bg-brand-primary dark:bg-brand-primaryDark text-white dark:text-brand-dark rounded-full flex items-center justify-center">
-              <i class="ph-fill ph-cooking-pot text-xl"></i>
+            <div class="w-8 h-8 md:w-10 md:h-10 bg-brand-primary dark:bg-brand-primaryDark text-white dark:text-brand-dark rounded-full flex items-center justify-center">
+              <i class="ph-fill ph-cooking-pot text-lg md:text-xl"></i>
             </div>
             Surabi Lembur
           </a>
-          <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed pr-4">
+          <p class="text-gray-600 dark:text-gray-400 text-xs md:text-sm leading-relaxed md:pr-4 max-w-sm md:max-w-none">
             Sajian Autentik Pedesaan. Menikmati kelezatan murni dari resep tradisional
             dengan suasana hangat yang selalu mengingatkan pada rumah.
           </p>
         </div>
 
-        <!-- Tautan -->
-        <div class="lg:col-span-3 lg:col-start-7">
-          <h4 class="font-bold text-sm tracking-widest uppercase mb-6 text-brand-primary dark:text-white">
+        <!-- Tautan (Dibuat rata tengah di HP) -->
+        <div class="lg:col-span-3 lg:col-start-7 text-center md:text-left mt-2 md:mt-0">
+          <h4 class="font-bold text-xs md:text-sm tracking-widest uppercase mb-4 md:mb-6 text-brand-primary dark:text-white">
             Tautan
           </h4>
-          <ul class="space-y-4 text-sm text-gray-600 dark:text-gray-400 font-medium">
+          <ul class="space-y-3 md:space-y-4 text-xs md:text-sm text-gray-600 dark:text-gray-400 font-medium">
             <li v-for="link in footerLinks" :key="link.id">
               <a
                 :href="`#${link.id}`"
@@ -40,19 +41,19 @@
           </ul>
         </div>
 
-        <!-- Jam Operasional — ada di HTML referensi, hilang di Vue sebelumnya -->
-        <div class="lg:col-span-3">
-          <h4 class="font-bold text-sm tracking-widest uppercase mb-6 text-brand-primary dark:text-white">
+        <!-- Jam Operasional -->
+        <div class="lg:col-span-3 text-center md:text-left mt-2 md:mt-0">
+          <h4 class="font-bold text-xs md:text-sm tracking-widest uppercase mb-4 md:mb-6 text-brand-primary dark:text-white">
             Operasional
           </h4>
-          <ul class="space-y-4 text-sm text-gray-600 dark:text-gray-400">
+          <ul class="space-y-3 md:space-y-4 text-xs md:text-sm text-gray-600 dark:text-gray-400">
             <li
               v-for="jam in jamOperasional"
               :key="jam.label"
-              class="flex justify-between items-center"
+              class="flex justify-between items-center border-b border-gray-200/50 dark:border-gray-800 md:border-none pb-2 md:pb-0"
             >
               <span>{{ jam.label }}</span>
-              <span class="bg-[#EBE4D8] dark:bg-black/30 px-3 py-1 rounded-full text-xs font-bold text-brand-primary dark:text-brand-primaryDark">
+              <span class="bg-[#EBE4D8] dark:bg-black/30 px-2.5 py-1 md:px-3 md:py-1 rounded-full text-[10px] md:text-xs font-bold text-brand-primary dark:text-brand-primaryDark">
                 {{ jam.waktu }}
               </span>
             </li>
@@ -61,7 +62,7 @@
       </div>
 
       <!-- Copyright -->
-      <div class="pt-8 border-t border-gray-200 dark:border-gray-800 text-center text-sm text-gray-500 dark:text-gray-400 font-medium">
+      <div class="pt-6 md:pt-8 border-t border-gray-200 dark:border-gray-800 text-center text-[10px] md:text-sm text-gray-500 dark:text-gray-400 font-medium">
         &copy; 2026 Surabi Lembur. Sajian Autentik Pedesaan
       </div>
     </div>
@@ -75,7 +76,7 @@ const scrollTo = inject('scrollTo')
 
 const footerLinks = [
   { id: 'beranda',     label: 'Beranda' },
-  { id: 'kontak',      label: 'Lokasi' },
+  { id: 'lokasi',      label: 'Lokasi' }, // ID sudah saya ganti agar pas dengan section Maps
   { id: 'menu',        label: 'Menu' },
   { id: 'tentang',     label: 'Tentang Kami' },
   { id: 'testimonial', label: 'Testimonial' },
