@@ -67,7 +67,7 @@ const WA_NUMBER  = '6288971885966'
 const EMAIL_TUJUAN = 'surabilembur@gmail.com'
 
 function sendViaWA() {
-  const { nama = '', pesan = '', email = '' } = props.formData
+  const { nama = '', pesan = ''} = props.formData
   const text = encodeURIComponent(
     `Halo Surabi Lembur, saya ${nama}.\n\n${pesan}\n\nEmail kontak: ${email}`
   )
@@ -79,7 +79,7 @@ function sendViaEmail() {
   const { nama = '', pesan = '', email = '' } = props.formData
   const subject = encodeURIComponent(`Pesan dari Website - ${nama}`)
   const body    = encodeURIComponent(
-    `Halo Tim Surabi Lembur,\n\n${pesan}\n\nSalam,\n${nama}\n${email}`
+    `Halo Tim Surabi Lembur,\n\n${pesan}\n\nSalam,\n${nama}}`
   )
   window.location.href = `mailto:${EMAIL_TUJUAN}?subject=${subject}&body=${body}`
   emit('close')
