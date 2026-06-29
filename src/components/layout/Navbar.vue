@@ -21,8 +21,8 @@
         @click.prevent="scrollTo('beranda')"
       >
         <div
-          class="w-8 h-8 md:w-10 md:h-10 bg-brand-primary dark:bg-brand-primaryDark text-white dark:text-brand-dark rounded-full flex items-center justify-center"
-        >
+          class="w-8 h-8 md:w-10 md:h-10 text-white dark:text-brand-dark rounded-full flex items-center justify-center"
+          >
           <img
             src="https://nzmzljgowwpbnyjqdnvy.supabase.co/storage/v1/object/public/Surabi/Ellipse%201.png" 
             alt="Menu"
