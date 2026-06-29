@@ -11,11 +11,7 @@
         aria-label="Buka menu"
         @click="$emit('open-sidebar')"
       >
-        <img 
-          src="https://nzmzljgowwpbnyjqdnvy.supabase.co/storage/v1/object/public/Surabi/Ellipse%201.png" 
-          alt="Menu"
-          class="w-7 h-7 object-contain"
-          />
+        <i class="ph ph-list"></i>
       </button>
 
       <!-- Logo: absolute-centered on mobile, static on desktop -->
@@ -27,7 +23,11 @@
         <div
           class="w-8 h-8 md:w-10 md:h-10 bg-brand-primary dark:bg-brand-primaryDark text-white dark:text-brand-dark rounded-full flex items-center justify-center"
         >
-          <i class="ph-fill ph-cooking-pot text-base md:text-xl"></i>
+          <img
+            src="https://nzmzljgowwpbnyjqdnvy.supabase.co/storage/v1/object/public/Surabi/Ellipse%201.png" 
+            alt="Menu"
+            class="w-7 h-7 object-contain"
+            />
         </div>
         Surabi Lembur
       </a>
