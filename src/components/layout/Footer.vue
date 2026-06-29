@@ -13,7 +13,11 @@
             @click.prevent="scrollTo('beranda')"
           >
             <div class="w-8 h-8 md:w-10 md:h-10 bg-brand-primary dark:bg-brand-primaryDark text-white dark:text-brand-dark rounded-full flex items-center justify-center flex-shrink-0">
-              <i class="ph-fill ph-cooking-pot text-lg md:text-xl"></i>
+              <img
+                src="https://nzmzljgowwpbnyjqdnvy.supabase.co/storage/v1/object/public/Surabi/Ellipse%201.png" 
+                alt="Menu"
+                class="w-7 h-7 object-contain"
+                />
             </div>
             Surabi Lembur
           </a>
