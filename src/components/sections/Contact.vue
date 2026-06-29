@@ -1,13 +1,8 @@
 <template>
-  <!-- BUNGKUSAN UTAMA UNTUK DUA SECTION -->
   <div>
     
-    <!-- ==========================================
-         SECTION 1: HUBUNGI KAMI (Form & Sosmed)
-    =========================================== -->
     <section id="kontak" class="pt-12 pb-8 md:pt-20 md:pb-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <!-- Heading -->
       <div class="text-center mb-10 md:mb-16" data-aos="fade-up">
         <h2 class="font-serif text-3xl md:text-5xl font-bold text-brand-primary dark:text-white mb-4 md:mb-6">
           Hubungi Kami
@@ -20,10 +15,8 @@
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-10 lg:gap-16">
         
-        <!-- ── Kolom Kiri ── -->
         <div class="lg:col-span-5 space-y-6 md:space-y-10" data-aos="fade-right">
           
-          <!-- Kontak langsung + sosmed -->
           <div class="bg-brand-surface dark:bg-brand-surfaceDark p-6 md:p-8 rounded-3xl md:rounded-4xl">
             <h3 class="font-bold text-xl md:text-2xl mb-6 md:mb-8 dark:text-white">Sapa Kami Langsung</h3>
             <div class="space-y-5 md:space-y-6">
@@ -42,7 +35,6 @@
               </div>
             </div>
 
-            <!-- Sosmed -->
             <h3 class="font-bold text-xl md:text-2xl mb-4 md:mb-6 mt-8 md:mt-10 dark:text-white">Ikuti Perjalanan Kami</h3>
             <div class="flex gap-3 md:gap-4">
               <a
@@ -57,7 +49,6 @@
             </div>
           </div>
 
-          <!-- FAQ Accordion -->
           <div class="bg-white dark:bg-brand-surfaceDark border border-gray-200 dark:border-gray-800 p-6 md:p-8 rounded-3xl md:rounded-4xl shadow-sm">
             <h3 class="font-bold text-xl md:text-2xl mb-4 md:mb-6 dark:text-white">Pertanyaan Umum</h3>
             <div class="space-y-1 md:space-y-2">
@@ -88,11 +79,9 @@
           </div>
         </div>
 
-        <!-- ── Kolom Kanan ── -->
-        <div class="lg:col-span-7 h-full" data-aos="fade-left">
+        <div class="lg:col-span-7 lg:self-start" data-aos="fade-left">
           
-          <!-- Form Kirim Pesan -->
-          <div class="bg-[#EBE4D8] dark:bg-[#2A2420] p-6 md:p-10 rounded-3xl md:rounded-4xl shadow-inner h-full flex flex-col justify-center">
+          <div class="bg-[#EBE4D8] dark:bg-[#2A2420] p-6 md:p-10 rounded-3xl md:rounded-4xl shadow-inner">
             <h3 class="font-bold text-xl md:text-2xl mb-6 md:mb-8 dark:text-white">Kirim Pesan</h3>
             <form class="space-y-4 md:space-y-6" @submit.prevent="handleSubmit">
               <div>
@@ -114,7 +103,7 @@
                 <textarea
                   v-model="form.pesan"
                   required
-                  rows="4"
+                  rows="5"
                   placeholder="Tulis pesan, pertanyaan, atau saran Anda di sini..."
                   class="w-full px-4 py-3 md:px-5 md:py-4 text-sm md:text-base rounded-xl md:rounded-2xl border-0 ring-1 ring-gray-300 dark:ring-gray-700 bg-white dark:bg-[#1A1614] dark:text-white focus:outline-none focus:ring-2 focus:ring-brand-primary transition-shadow resize-none"
                 ></textarea>
@@ -132,15 +121,10 @@
       </div>
     </section>
 
-    <!-- ==========================================
-         SECTION 2: LOKASI (Berdiri Sendiri)
-    =========================================== -->
     <section id="lokasi" class="pb-12 pt-4 md:pb-28 md:pt-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <!-- Lokasi + Tombol Maps -->
       <div class="bg-brand-surface dark:bg-brand-surfaceDark p-6 md:p-8 rounded-3xl md:rounded-4xl flex flex-col md:flex-row gap-6 md:gap-8 items-center" data-aos="fade-up">
         
-        <!-- Map image -->
         <div class="w-full md:w-1/2 relative h-48 md:min-h-[250px] lg:min-h-[300px] rounded-2xl md:rounded-3xl overflow-hidden shadow-md">
           <img
             src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800"
@@ -154,7 +138,6 @@
           </div>
         </div>
 
-        <!-- Alamat + tombol -->
         <div class="w-full md:w-1/2 space-y-5 md:space-y-6">
           <div>
             <h4 class="font-bold text-lg md:text-xl mb-2 md:mb-3 flex items-center gap-2 dark:text-white">
