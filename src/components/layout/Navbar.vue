@@ -11,7 +11,11 @@
         aria-label="Buka menu"
         @click="$emit('open-sidebar')"
       >
-        <i class="ph ph-list"></i>
+        <img 
+          src="https://nzmzljgowwpbnyjqdnvy.supabase.co/storage/v1/object/public/Surabi/Ellipse%201.png" 
+          alt="Menu"
+          class="w-7 h-7 object-contain"
+          />
       </button>
 
       <!-- Logo: absolute-centered on mobile, static on desktop -->
