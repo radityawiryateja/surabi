@@ -21,7 +21,11 @@
           <span
             class="font-serif font-bold text-xl text-brand-primary dark:text-brand-primaryDark flex items-center gap-2"
           >
-            <i class="ph-fill ph-cooking-pot"></i> Surabi Lembur
+            <img
+              src="https://nzmzljgowwpbnyjqdnvy.supabase.co/storage/v1/object/public/Surabi/Ellipse%201.png"
+              alt="Menu"
+              class="w-7 h-7 object-contain"
+              /> Surabi Lembur
           </span>
           <button
             class="text-xl text-gray-500 hover:text-red-500 bg-gray-100 dark:bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center transition"
